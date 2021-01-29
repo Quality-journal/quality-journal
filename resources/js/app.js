@@ -1,4 +1,14 @@
+require('lang.js');
+
 import Vue from 'vue';
+import VueLang from '@eli5/vue-lang-js'
+import translations from './vue-translations.js';
+
+Vue.use(VueLang, {
+    messages: translations, // Provide locale file
+    locale: 'sr', // Set locale
+    fallback: 'sr' // Set fallback lacale
+});
 
 Vue.component('main-content', require('./components/MainContent.vue').default);
 Vue.component('navigation-component', require('./components/Navigation.vue').default);

@@ -15,16 +15,16 @@
                 <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                     <div class="text-sm lg:flex-grow text-lg">
                         <a :href="'#'" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-600 mr-4">
-                            Članci
+                            {{ $trans('strings.Članci') }}
                         </a>
                         <a :href="'/manual'" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-600 mr-4">
-                            Uputstvo za autore
+                            {{ $trans('strings.Uputstvo za autore') }}
                         </a>
                         <a :href="'/about'" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-600 mr-4">
-                            O Časopisu
+                            {{ $trans('strings.O Časopisu') }}
                         </a>
                         <a :href="'/contact'" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-600 mr-4">
-                            Kontakt
+                            {{ $trans('strings.Kontakt') }}
                         </a>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                             </button>
                         </div>
 
-                        <div v-if='showMenu' class="origin-top-right absolute right-0 mt-2 w-12 bg-white">
+                        <div v-if='showMenu' class="origin-top-right absolute right-0 mt-2 w-12 bg-white z-10">
                             <div v-if="locale != 'en'" class="py-2 px-3" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                 <a :href="'/lang/en'"><img class="h-4 block" src="/images/en.png" alt="English"></a>
                             </div>
@@ -71,7 +71,14 @@
         methods: {
             toggleShow: function() {
                 this.showMenu = !this.showMenu;
-            }
+            },
         },
+        mounted: function() {
+            if (localStorage.getItem('locale')) {
+                this.$lang.setLocale(localStorage.getItem('locale'));
+            } else {
+                this.$lang.setLocale('sr');
+            }
+        }
     }
 </script>

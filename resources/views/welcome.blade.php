@@ -2,6 +2,6 @@
 
     <slider-component></slider-component>
 
-    <main-content></main-content>
+    <front-page-content></front-page-content>
 
 </x-guest-layout>

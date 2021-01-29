@@ -8,31 +8,30 @@
                     <a :href="'/'"><span class="font-semibold text-xl tracking-tight">Quality Journal</span></a>
                 </div>
                 <div class="block lg:hidden">
-                    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                    <button @click='toggleMobileMenu' class="flex items-center px-3 py-2 text-teal-200 hover:text-white">
                         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Meni</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                     </button>
                 </div>
-                <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                    <div class="text-sm lg:flex-grow text-lg">
-                        <a :href="'#'" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-600 mr-4">
+                <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" v-bind:class="{ 'hidden': !showMobileMenu}">
+                    <div class="text-lg lg:flex-grow">
+                        <a :href="'#'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
                             {{ $trans('strings.Članci') }}
                         </a>
-                        <a :href="'/manual'" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-600 mr-4">
+                        <a :href="'/manual'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
                             {{ $trans('strings.Uputstvo za autore') }}
                         </a>
-                        <a :href="'/about'" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-600 mr-4">
+                        <a :href="'/about'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
                             {{ $trans('strings.O Časopisu') }}
                         </a>
-                        <a :href="'/contact'" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-600 mr-4">
+                        <a :href="'/contact'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
                             {{ $trans('strings.Kontakt') }}
                         </a>
                     </div>
                 </div>
-
                 <div class="block lg:flex lg:items-center lg:w-auto">
                     <div class="relative inline-block text-left">
                         <div>
-                            <button @click='toggleShow' class="inline-flex justify-center w-full text-sm font-medium text-gray-700" id="options-menu" aria-haspopup="true" aria-expanded="true">
+                            <button @click='toggleShow' v-bind:class="{ 'mt-4': showMobileMenu}" class="inline-flex justify-center w-full text-sm font-medium text-gray-700" id="options-menu" aria-haspopup="true" aria-expanded="true">
                                 <img v-if="locale == 'sr'" class="h-4" src="/images/sr.png" alt="Srpski">
                                 <img v-if="locale == 'en'" class="h-4" src="/images/en.png" alt="English">
 
@@ -52,7 +51,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </nav>
         </div>
@@ -65,6 +63,7 @@
         data: function() {
             return {
                 showMenu: false,
+                showMobileMenu: false,
                 locale: localStorage.getItem('locale')
             }
         },
@@ -72,6 +71,9 @@
             toggleShow: function() {
                 this.showMenu = !this.showMenu;
             },
+            toggleMobileMenu: function() {
+                this.showMobileMenu = !this.showMobileMenu;
+            }
         },
         mounted: function() {
             if (localStorage.getItem('locale')) {

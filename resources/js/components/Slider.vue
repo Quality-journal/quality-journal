@@ -26,6 +26,7 @@
 
 <script>
     export default {
+       
 data() {
    return {
        slides: [

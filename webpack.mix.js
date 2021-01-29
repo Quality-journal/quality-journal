@@ -11,10 +11,24 @@ const mix = require('laravel-mix');
  |
  */
 
+const WebpackShellPluginNext = require('webpack-shell-plugin-next');
+
+mix.webpackConfig({
+    plugins:
+        [
+            new WebpackShellPluginNext({
+                onBuildStart:{
+                    scripts: ['php artisan lang:js resources/js/vue-translations.js --no-lib --quiet']
+                },
+                onBuildEnd:[]
+            })
+        ]
+});
+
 mix.js('resources/js/app.js', 'public/js').vue().
     postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
         require('autoprefixer'),
     ]
-    );
+);

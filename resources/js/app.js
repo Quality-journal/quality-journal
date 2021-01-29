@@ -1,6 +1,16 @@
-import Vue from 'vue';
+require('lang.js');
 
-Vue.component('main-content', require('./components/MainContent.vue').default);
+import Vue from 'vue';
+import VueLang from '@eli5/vue-lang-js'
+import translations from './vue-translations.js';
+
+Vue.use(VueLang, {
+    messages: translations, // Provide locale file
+    locale: 'sr', // Set locale
+    fallback: 'sr' // Set fallback lacale
+});
+
+Vue.component('front-page-content', require('./components/FrontPageContent.vue').default);
 Vue.component('navigation-component', require('./components/Navigation.vue').default);
 Vue.component('footer-component', require('./components/Footer.vue').default);
 Vue.component('slider-component', require('./components/Slider.vue').default);

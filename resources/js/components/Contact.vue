@@ -4,7 +4,8 @@
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6">
             <h1 class="text-2xl font-semibold mt-2 pb-4 p-2">{{ $trans('strings.Kontakt') }}</h1><hr>
             <div class="flex flex-wrap py-4">
-                <div class="w-full sm:w-2/3 px-2">Blok levo</div>
+                <div class="w-full sm:w-2/3 px-2">
+                <contact-form-component></contact-form-component></div>
                 <div class="w-full sm:w-1/3 px-8">
                     <p class="text-lg font-semibold leading-6">
                         Univerzitet u Beogradu<br>

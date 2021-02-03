@@ -30,7 +30,7 @@
             <navigation-component></navigation-component>
 
             {{ $slot }}
-            
+
             <footer-component></footer-component>
 
         </div>

@@ -3,11 +3,20 @@
     <div class="w-1/2"></div>
     <div x-data="{ isOpen: false }" class="relative w-1/2 flex justify-end">
         <button @click="isOpen = !isOpen" class="realtive z-10 w-12 h-12 rounded-full overflow-hidden border-4 border-gray-400 hover:border-gray-300 focus:border-gray-300 focus:outline-none">
-            <img src="https://source.unsplash.com/uJ8LNVCBjFQ/400x400">
+            <img src="{{ asset('/images/user-avatar.webP') }}">
         </button>
         <button x-show="isOpen" @click="isOpen = false" class="h-full w-full fixed inset-0 cursor-default"></button>
         <div x-show="isOpen" class="absolute w-32 bg-white rounded-lg shadow-lg py-2 mt-16">
-            <a href="{{ route('logout') }}" class="block px-4 py-2 account-link hover:text-white">Izloguj se</a>
+            <!-- Authentication -->
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+
+                <a class="py-2 px-2" href="route('logout')"
+                        onclick="event.preventDefault();
+                                    this.closest('form').submit();">
+                    {{ __('Logout') }}
+                </a>
+            </form>
         </div>
     </div>
 </header>
@@ -32,9 +41,15 @@
             <i class="fas fa-sticky-note mr-3"></i>
             Blank Page
         </a>
-        <a href="/" class="flex items-center text-white opacity-75 hover:opacity-100 py-2 pl-4 nav-item">
-            <i class="fas fa-sign-out-alt mr-3"></i>
-            Izloguj se
-        </a>
+        <!-- Authentication -->
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+
+            <a  class="flex items-center text-white opacity-75 hover:opacity-100 py-2 pl-4 nav-item" href="route('logout')"
+                    onclick="event.preventDefault();
+                                this.closest('form').submit();">
+                {{ __('Logout') }}
+            </a>
+        </form>
     </nav>
 </header>

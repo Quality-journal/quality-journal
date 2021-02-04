@@ -6,10 +6,10 @@
     </x-slot>
 
     <main class="w-full flex-grow p-6">
-        <h1 class="text-3xl text-black pb-2">Articles</h1>
+        <h1 class="text-3xl text-black pb-2">Articles for "{{ $issue->title }}"</h1>
 
         <div class="w-1/2 sm:w-1/6">
-            <a href="{{ route('articles.create') }}" class="w-full bg-white cta-btn font-semibold py-2 mt-2 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
+            <a href="{{ route('articles.create', [ 'issue_id' => $issue->id ]) }}" class="w-full bg-white cta-btn font-semibold py-2 mt-2 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
                 <i class="fas fa-plus mr-3"></i> New Article
             </a>
         </div>

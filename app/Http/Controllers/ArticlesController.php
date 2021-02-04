@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Article;
+use App\Models\Issue;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -14,10 +15,12 @@ class ArticlesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $articles = Article::all();
-        return view('admin-pages.articles.index', ['articles' => $articles]);
+        $issue_id = $request->query('issue_id');
+        $articles = Article::where('issue_id', $issue_id)->get();
+        $issue = Issue::find($issue_id);
+        return view('admin-pages.articles.index', ['articles' => $articles, 'issue' => $issue]);
     }
 
     /**

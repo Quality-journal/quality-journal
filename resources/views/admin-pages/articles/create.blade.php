@@ -12,14 +12,14 @@
                 <i class="fas fa-edit mr-2"></i> Create a new article
             </p>
             <span  class="pb-4">
-                <a href="{{ route('articles.index') }}" class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"><i class="fas fa-arrow-left"></i>  Back</a>
+                <a href="{{ route('articles.index', [ 'issue_id' => Request::get('issue_id') ]) }}" class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"><i class="fas fa-arrow-left"></i>  Back</a>
             </span>
         </div>
 
         <div>
             <form method="POST" action="{{ route('articles.store') }}" class="p-10 bg-white rounded shadow-xl" enctype="multipart/form-data">
                 @csrf
-                <input type="hidden" name="issue_id" value="1">
+                <input type="hidden" name="issue_id" value="{{ Request::get('issue_id') }}">
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="title">Title</label>
                     <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="title" name="title" type="text" required>

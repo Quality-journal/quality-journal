@@ -6,75 +6,27 @@
     </x-slot>
 
     <main class="w-full flex-grow p-6">
-        <h1 class="text-3xl text-black pb-6">Dashboard</h1>
+        <h1 class="text-3xl text-black pb-6">Selekcije izdanja</h1>
 
-        <div class="w-full mt-12">
-            <p class="text-xl pb-3 flex items-center">
-                <i class="fas fa-list mr-3"></i> Latest Reports
-            </p>
-            <div class="bg-white overflow-auto">
-                <table class="min-w-full bg-white">
-                    <thead class="bg-gray-800 text-white">
-                        <tr>
-                            <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Name</th>
-                            <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Last name</th>
-                            <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Phone</th>
-                            <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Email</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-gray-700">
-                        <tr>
-                            <td class="w-1/3 text-left py-3 px-4">Lian</td>
-                            <td class="w-1/3 text-left py-3 px-4">Smith</td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                        </tr>
-                        <tr class="bg-gray-200">
-                            <td class="w-1/3 text-left py-3 px-4">Emma</td>
-                            <td class="w-1/3 text-left py-3 px-4">Johnson</td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                        </tr>
-                        <tr>
-                            <td class="w-1/3 text-left py-3 px-4">Oliver</td>
-                            <td class="w-1/3 text-left py-3 px-4">Williams</td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                        </tr>
-                        <tr class="bg-gray-200">
-                            <td class="w-1/3 text-left py-3 px-4">Isabella</td>
-                            <td class="w-1/3 text-left py-3 px-4">Brown</td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                        </tr>
-                        <tr>
-                            <td class="w-1/3 text-left py-3 px-4">Lian</td>
-                            <td class="w-1/3 text-left py-3 px-4">Smith</td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                        </tr>
-                        <tr class="bg-gray-200">
-                            <td class="w-1/3 text-left py-3 px-4">Emma</td>
-                            <td class="w-1/3 text-left py-3 px-4">Johnson</td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                        </tr>
-                        <tr>
-                            <td class="w-1/3 text-left py-3 px-4">Oliver</td>
-                            <td class="w-1/3 text-left py-3 px-4">Williams</td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                        </tr>
-                        <tr class="bg-gray-200">
-                            <td class="w-1/3 text-left py-3 px-4">Isabella</td>
-                            <td class="w-1/3 text-left py-3 px-4">Brown</td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                            <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-10 mx-auto">
+
+                <div class="flex flex-wrap -m-4 text-center">
+
+                    <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                        <h2 class="title-font font-medium text-3xl text-gray-900">2021</h2>
+                        <p class="leading-relaxed text-left">Izdanje 1</p>
+                        <p class="leading-relaxed text-left">Izdanje 2</p>
+                        <p class="leading-relaxed text-left">Izdanje 3</p>
+                        <p class="leading-relaxed text-left">Izdanje 4</p>
+                    </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
+        </section>
+
     </main>
 
 </x-app-layout>

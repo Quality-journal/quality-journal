@@ -41,7 +41,7 @@
                                 @foreach($selection->issues as $issue)
                                     <div class="flex justify-between border-b-2 py-2">
                                         <a class="py-2 px-2 font-bold" href="{{route('issues.edit', ['issue'=>$issue->id])}}">{{ $issue->title }}</a>
-                                        <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" href="{{ route('articles.index', ['issue_id' => $issue->id]) }}">Articles</a>
+                                        <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" href="{{ route('articles.index', ['issue_id' => $issue->id]) }}">Članci</a>
                                     </div>
                                 @endforeach
                                 <div class="flex justify-between py-2">

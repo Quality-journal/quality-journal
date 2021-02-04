@@ -7,11 +7,11 @@
             <i class="fas fa-tachometer-alt mr-3"></i>
             Dashboard
         </a>
-        <a href="{{ route('pages.index') }}" class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item @if(Route::is('pages.*')) active-nav-link @endif">
+        <a href="{{ route('pages.index') }}" class="flex items-center text-white py-4 pl-6 nav-item @if(Route::is('pages.*')) active-nav-link @endif">
             <i class="fas fa-sticky-note mr-3"></i>
             Stranice
         </a>
-        <a href="{{ route('selections.index') }}" class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item @if(Route::is('selections.*')) active-nav-link @endif">
+        <a href="{{ route('selections.index') }}" class="flex items-center text-white py-4 pl-6 nav-item @if(Route::is('selections.*')) active-nav-link @endif">
             <i class="fas fa-scroll mr-3"></i>
             Selekcije
         </a>

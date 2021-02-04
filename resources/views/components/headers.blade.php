@@ -11,7 +11,7 @@
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
 
-                <a class="py-2 px-2" href="route('logout')"
+                <a class="py-2 px-2 ml-2" href="route('logout')"
                         onclick="event.preventDefault();
                                     this.closest('form').submit();">
                     {{ __('Logout') }}
@@ -33,19 +33,26 @@
 
     <!-- Dropdown Nav -->
     <nav :class="isOpen ? 'flex': 'hidden'" class="flex flex-col pt-4">
-        <a href="{{ route('dashboard') }}" class="flex items-center active-nav-link text-white py-2 pl-4 nav-item">
+
+        <a href="{{ route('dashboard') }}" class="flex items-center @if(Route::is('dashboard')) active-nav-link @endif text-white py-2 pl-4 nav-item">
             <i class="fas fa-tachometer-alt mr-3"></i>
             Dashboard
         </a>
-        <a href="#" class="flex items-center text-white opacity-75 hover:opacity-100 py-2 pl-4 nav-item">
+
+        <a href="{{ route('pages.index') }}" class=" @if(Route::is('pages.*')) active-nav-link @endif flex items-center text-white py-2 pl-4 nav-item">
             <i class="fas fa-sticky-note mr-3"></i>
-            Blank Page
+            Stranice
+        </a>
+
+        <a href="{{ route('selections.index') }}" class=" @if(Route::is('selections.*')) active-nav-link @endif flex items-center text-white py-2 pl-4 nav-item">
+            <i class="fas fa-scroll mr-3"></i>
+            Selekcije
         </a>
         <!-- Authentication -->
         <form method="POST" action="{{ route('logout') }}">
             @csrf
 
-            <a  class="flex items-center text-white opacity-75 hover:opacity-100 py-2 pl-4 nav-item" href="route('logout')"
+            <a  class="flex items-center text-white py-2 pl-4 nav-item" href="route('logout')"
                     onclick="event.preventDefault();
                                 this.closest('form').submit();">
                 {{ __('Logout') }}

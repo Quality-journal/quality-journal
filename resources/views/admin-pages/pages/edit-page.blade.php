@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Edit page') }}
+            {{ __('Izmena stranice') }}
         </h2>
     </x-slot>
 
@@ -9,10 +9,10 @@
 
         <div class="flex justify-between">
             <p class="text-xl pb-4">
-                <i class="fas fa-edit mr-2"></i> Edit page "{{ $page->title }}"
+                <i class="fas fa-edit mr-2"></i> Izmena stranice "{{ $page->title }}"
             </p>
             <span  class="pb-4">
-                <a href="{{ route('pages.index') }}" class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"><i class="fas fa-arrow-left"></i>  Back</a>
+                <a href="{{ route('pages.index') }}" class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"><i class="fas fa-arrow-left"></i>  Nazad</a>
             </span> 
         </div>
 

@@ -1,16 +1,16 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Articles') }}
+            {{ __('Članci') }}
         </h2>
     </x-slot>
 
     <main class="w-full flex-grow p-6">
-        <h1 class="text-3xl text-black pb-2">Articles for "{{ $issue->title }}"</h1>
+        <h1 class="text-3xl text-black pb-2">Članci za "{{ $issue->title }}"</h1>
 
         <div class="w-1/2 sm:w-1/6">
             <a href="{{ route('articles.create', [ 'issue_id' => $issue->id ]) }}" class="w-full bg-white cta-btn font-semibold py-2 mt-2 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
-                <i class="fas fa-plus mr-3"></i> New Article
+                <i class="fas fa-plus mr-3"></i> Novi članak
             </a>
         </div>
 
@@ -36,8 +36,8 @@
                 <table class="min-w-full border-collapse">
                     <thead class="bg-gray-800 text-white">
                         <tr>
-                            <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Article</th>
-                            <th class="w-1/3 text-right py-3 px-4 uppercase font-semibold text-sm">Actions</th>
+                            <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Članak</th>
+                            <th class="w-1/3 text-right py-3 px-4 uppercase font-semibold text-sm">Opcije</th>
                         </tr>
                     </thead>
                     <tbody class="text-gray-700">

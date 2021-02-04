@@ -6,7 +6,7 @@
     </x-slot>
     
 <div class="leading-loose">
-  <form class="max-w-xl m-4 p-10 bg-white rounded shadow-xl" method='POST' action="{{route('selections.update',['selection'=>$selection->id])}}">
+  <form class="m-4 p-10 bg-white rounded shadow-xl" method='POST' action="{{route('selections.update',['selection'=>$selection->id])}}">
       @csrf 
       @method('PUT')
     <p class="text-gray-800 text-xl font-semibold">Edit section</p>

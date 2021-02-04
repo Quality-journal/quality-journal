@@ -15,10 +15,10 @@
 
                     <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
                         <div class="bg-white px-4 py-6 rounded-lg">
-                            @foreach($selections as $selection):
-                            <h2 class="title-font font-medium text-3xl text-indigo-900">2021</h2>
+                            @foreach($selections as $selection)
+                            <h2 class="title-font font-medium text-3xl text-indigo-900">{{$selection->title}}</h2>
                             @foreach($selection->issues as $issue)
-                            <a href="{{route('issues.edit',['issue'=>$issue->id])}}">{{$issue->title}}</a>
+                            <a href="{{route('issues.edit',['issue'=>$issue->id,'selection_id'=>$selection->id])}}">{{$issue->title}}</a>
                            
                             @endforeach
                             @endforeach

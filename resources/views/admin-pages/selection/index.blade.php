@@ -18,7 +18,7 @@
                             @foreach($selections as $selection)
                             <h2 class="title-font font-medium text-3xl text-indigo-900">{{$selection->title}}</h2>
                             @foreach($selection->issues as $issue)
-                            <a href="{{route('issues.edit',['issue'=>$issue->id,'selection_id'=>$selection->id])}}">{{$issue->title}}</a>
+                            <a href="{{route('issues.edit',['issue'=>$issue->id])}}">{{$issue->title}}</a>
                            
                             @endforeach
                             @endforeach

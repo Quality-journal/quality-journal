@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\IssueController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\SelectionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +30,8 @@ Route::middleware(['auth'])->group(function () {
     })->name('dashboard');
 
     Route::resource('pages', PagesController::class);
+    Route::resource('selections', SelectionController::class);
+    Route::resource('issues', IssueController::class);
 });
 
 require __DIR__.'/auth.php';

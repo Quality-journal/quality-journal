@@ -1,8 +1,10 @@
-<script src="{{ asset('js/ckeditor.js') }}"></script>
 
+ <script src="{{ asset('js/ckeditor.js') }}"></script>
     <script>
-        ClassicEditor
-			.create( document.querySelector( '.editor' ), {
+		var allEditors = document.querySelectorAll('.editor');
+        for (var i = 0; i < allEditors.length; ++i) {
+            ClassicEditor
+			.create( allEditors[i],  {
 				removePlugins: [ 'Title' ],
 				toolbar: {
 					items: [
@@ -61,6 +63,7 @@
 				console.warn( 'Build id: eafvm8snd33a-xm0z2qkqxymw' );
 				console.error( error );
 			} );
+		}
     </script>
 
     <style>

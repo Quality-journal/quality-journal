@@ -78,7 +78,7 @@ class PagesController extends Controller
         try{
             $page->save();
             $request->session()->flash('message', 'Stranica uspešno izmenjena');
-        } catch(Exception $e){
+        } catch(\Exception $e){
             //
         }
         return redirect('/pages');

@@ -6,7 +6,7 @@
     </x-slot>
     
 <div class="leading-loose">
-  <form class="max-w-xl m-4 p-10 bg-white rounded shadow-xl" method='POST' action="{{route('selections.store')}}">
+  <form class="m-4 p-10 bg-white rounded shadow-xl" method='POST' action="{{route('selections.store')}}">
       @csrf 
     <p class="text-gray-800 text-xl font-semibold">Create section</p>
     <div class="mt-10" >

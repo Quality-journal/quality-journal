@@ -13,8 +13,8 @@ class SelectionController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
+    {   $selections=Selection::all();
+        return view('admin-pages.selection.index',['selections'=>$selections]);
     }
 
     /**

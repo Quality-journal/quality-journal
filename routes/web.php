@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ArticlesController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +30,8 @@ Route::middleware(['auth'])->group(function () {
     })->name('dashboard');
 
     Route::resource('pages', PagesController::class);
+    Route::resource('articles', ArticlesController::class);
+
 });
 
 require __DIR__.'/auth.php';

@@ -1,8 +1,11 @@
 <script src="{{ asset('js/ckeditor.js') }}"></script>
 
     <script>
-        ClassicEditor
-			.create( document.querySelector( '.editor' ), {
+
+        var allEditors = document.querySelectorAll('.editor');
+        for (var i = 0; i < allEditors.length; ++i) {
+            ClassicEditor
+			.create( allEditors[i], {
 				removePlugins: [ 'Title' ],
 				toolbar: {
 					items: [
@@ -61,6 +64,68 @@
 				console.warn( 'Build id: eafvm8snd33a-xm0z2qkqxymw' );
 				console.error( error );
 			} );
+        }
+
+        /*ClassicEditor
+			.create( document.querySelector( '.editor' ), {
+				removePlugins: [ 'Title' ],
+				toolbar: {
+					items: [
+						'|',
+						'heading',
+						'bold',
+						'italic',
+						'link',
+						'bulletedList',
+						'numberedList',
+						'alignment',
+						'fontSize',
+						'fontColor',
+						'fontFamily',
+						'horizontalLine',
+						'|',
+						'indent',
+						'outdent',
+						'|',
+						'imageUpload',
+						'blockQuote',
+						'insertTable',
+						'mediaEmbed',
+						'removeFormat',
+						'undo',
+						'redo'
+					]
+				},
+				language: 'en',
+				image: {
+					toolbar: [
+						'imageTextAlternative',
+						'imageStyle:full',
+						'imageStyle:side',
+						'linkImage'
+					]
+				},
+				table: {
+					contentToolbar: [
+						'tableColumn',
+						'tableRow',
+						'mergeTableCells',
+						'tableCellProperties',
+						'tableProperties'
+					]
+				},
+				licenseKey: '',
+
+			} )
+			.then( editor => {
+				window.editor = editor;
+			} )
+			.catch( error => {
+				console.error( 'Oops, something went wrong!' );
+				console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+				console.warn( 'Build id: eafvm8snd33a-xm0z2qkqxymw' );
+				console.error( error );
+			} );*/
     </script>
 
     <style>

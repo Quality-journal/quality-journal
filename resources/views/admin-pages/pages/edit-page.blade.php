@@ -7,15 +7,23 @@
 
     <main class="w-full flex-grow p-6">
 
-        <p class="text-xl pb-4 flex items-center">
-            <i class="fas fa-list mr-3"></i> Edit "About"
-        </p>
+        <div class="flex justify-between">
+            <p class="text-xl pb-4">
+                <i class="fas fa-edit mr-2"></i> Edit page "{{ $page->title }}"
+            </p>
+            <span  class="pb-4">
+                <a href="{{ route('pages.index') }}" class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"><i class="fas fa-arrow-left"></i>  Back</a>
+            </span> 
+        </div>
+
         <div>
-            <form method="POST" action="{{ route('pages.update', 1) }}" class="p-10 bg-white rounded shadow-xl">
+            <form method="POST" action="{{ route('pages.update', $page->id) }}" class="p-10 bg-white rounded shadow-xl">
                 @csrf
+                @method('PUT')
+
                 <div class="mt-2">
                     <label class="block text-gray-600 mb-4" for="content">Content</label>
-                    <textarea class="editor" id="content" name="content" required></textarea>
+                    <textarea class="editor" id="content" name="content" required>{{ $page->content }}</textarea>
                 </div>
                 <div class="mt-6">
                     <button type="submit" class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded">Submit</button>

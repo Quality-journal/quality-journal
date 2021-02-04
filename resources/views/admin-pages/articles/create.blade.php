@@ -19,7 +19,7 @@
         <div>
             <form method="POST" action="{{ route('articles.store') }}" class="p-10 bg-white rounded shadow-xl" enctype="multipart/form-data">
                 @csrf
-                <input type="hidden" name="issue" value="1">
+                <input type="hidden" name="issue_id" value="1">
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="title">Title</label>
                     <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="title" name="title" type="text" required>

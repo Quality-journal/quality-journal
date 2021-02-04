@@ -38,22 +38,13 @@ class ArticlesController extends Controller
      */
     public function store(Request $request)
     {
-        $article = new Article();
-        $article->title = $request->title;
-        $article->info = $request->info;
-        $article->doi = $request->doi;
-        $article->content = $request->content;
-        $article->authors = $request->authors;
-        $article->abstract = $request->abstract;
-        $article->recognitions = $request->recognitions;
-        $article->reference = $request->reference;
-        $article->authors_names = $request->authors_names;
-        $article->issue_id = $request->issue;
+        $article = Article::create($request->except(['file']));
 
         try{
             $filename = Str::snake($request->title).".pdf";
             Storage::putFileAs("public/articles", $request->file, $filename);
             $article->pdf = $filename;
+            $article->slug = Str::slug($article->title);
             $article->save();
             $request->session()->flash('message', 'Članak je uspešno sačuvan');
         } catch(\Exception $e){
@@ -69,7 +60,7 @@ class ArticlesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Article $article)
     {
         //
     }
@@ -80,9 +71,9 @@ class ArticlesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Article $article)
     {
-        $article = Article::findOrFail($id);
+        $article = Article::findorFail($article->id);
         return view('admin-pages.articles.edit', ['article' => $article]);
     }
 
@@ -93,20 +84,9 @@ class ArticlesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Article $article)
     {
-        $article = Article::findOrFail($id);
-
-        $article->title = $request->title;
-        $article->info = $request->info;
-        $article->doi = $request->doi;
-        $article->content = $request->content;
-        $article->authors = $request->authors;
-        $article->abstract = $request->abstract;
-        $article->recognitions = $request->recognitions;
-        $article->reference = $request->reference;
-        $article->authors_names = $request->authors_names;
-        $article->issue_id = $request->issue;
+        $article = Article::findOrFail($article->id);
 
         try{
             if($request->file){
@@ -115,6 +95,8 @@ class ArticlesController extends Controller
                 $article->pdf = $filename;
             }
 
+            $article->update($request->all());
+            $article->slug = Str::slug($article->title);
             $article->save();
             $request->session()->flash('message', 'Članak je uspešno izmenjen');
         } catch(\Exception $e){
@@ -131,7 +113,7 @@ class ArticlesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Article $article)
     {
         //
     }

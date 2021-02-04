@@ -35,11 +35,11 @@ class IssueController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $issue=Issue::create($request->except(['file']));
         $path = $request->file('image')->store('issue_images');
         $issue->image=$path;
-    
+
         $issue->save();
         return back()->with(['message'=>'Issue created!']);
     }

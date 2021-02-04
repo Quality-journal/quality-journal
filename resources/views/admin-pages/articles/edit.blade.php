@@ -20,7 +20,7 @@
             <form method="POST" action="{{ route('articles.update', $article->id) }}" class="p-10 bg-white rounded shadow-xl" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
-                <input type="hidden" name="issue" value="1">
+                <input type="hidden" name="issue_id" value="1">
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="title">Title</label>
                     <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="title" name="title" type="text" value="{{ $article->title }}" required>
@@ -35,11 +35,11 @@
                 </div>
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="content">Content</label>
-                    <textarea class="editor" id="content" name="content" required>{{ $article->content }}</textarea>
+                    <textarea class="editor" id="content" name="content">{{ $article->content }}</textarea>
                 </div>
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="authors">Authors</label>
-                    <textarea class="editor" id="authors" name="authors" required>{{ $article->authors }}</textarea>
+                    <textarea class="editor" id="authors" name="authors">{{ $article->authors }}</textarea>
                 </div>
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="authors_names">Authors names</label>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="abstract">Abstract</label>
-                    <textarea class="editor" id="abstract" name="abstract" required>{{ $article->abstract }}</textarea>
+                    <textarea class="editor" id="abstract" name="abstract">{{ $article->abstract }}</textarea>
                 </div>
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="recognitions">Recognitions</label>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="reference">Reference</label>
-                    <textarea class="editor" id="reference" name="reference" required>{{ $article->reference }}</textarea>
+                    <textarea class="editor" id="reference" name="reference">{{ $article->reference }}</textarea>
                 </div>
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="pdf">PDF</label>

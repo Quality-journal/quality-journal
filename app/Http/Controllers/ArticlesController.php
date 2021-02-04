@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Page;
+use App\Models\Article;
 
-class PagesController extends Controller
+class ArticlesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class PagesController extends Controller
      */
     public function index()
     {
-        $pages = Page::all();
-        return view('admin-pages.pages.pages', ['pages' => $pages]);
+        $articles = Article::all();
+        return view('admin-pages.articles.index', ['articles' => $articles]);
     }
 
     /**
@@ -25,7 +25,7 @@ class PagesController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin-pages.articles.create');
     }
 
     /**
@@ -58,8 +58,8 @@ class PagesController extends Controller
      */
     public function edit($id)
     {
-        $page = Page::findorFail($id);
-        return view('admin-pages.pages.edit-page', ['page' => $page]);
+        $article = Article::findOrFail($id);
+        return view('admin-pages.articles.edit', ['article' => $article]);
     }
 
     /**
@@ -71,17 +71,7 @@ class PagesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $page = Page::findOrFail($id);
-        $page->content = $request->content;
-
-        try{
-            $page->save();
-            $request->session()->flash('message', 'Stranica uspešno izmenjena');
-        } catch(Exception $e){
-            //
-        }
-        return redirect('/pages');
-
+        //
     }
 
     /**

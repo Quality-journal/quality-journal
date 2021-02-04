@@ -5,6 +5,8 @@ use App\Http\Controllers\FrontController;
 use App\Http\Controllers\IssueController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\SelectionController;
+use App\Http\Controllers\ArticlesController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +34,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('pages', PagesController::class);
     Route::resource('selections', SelectionController::class);
     Route::resource('issues', IssueController::class);
+    Route::resource('articles', ArticlesController::class);
+
 });
 
 require __DIR__.'/auth.php';

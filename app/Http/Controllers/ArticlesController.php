@@ -54,7 +54,7 @@ class ArticlesController extends Controller
             $request->session()->flash('message', 'Došlo je do greške. Pokušajte ponovo.');
         }
 
-        return redirect('/articles');
+        return redirect('/articles?issue_id='.$article->issue_id);
     }
 
     /**
@@ -107,7 +107,7 @@ class ArticlesController extends Controller
             $request->session()->flash('message', 'Došlo je do greške. Pokušajte ponovo.');
         }
 
-        return redirect('/articles');
+        return redirect('/articles?issue_id='.$article->issue_id);
     }
 
     /**

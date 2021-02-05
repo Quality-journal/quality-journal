@@ -7,10 +7,10 @@
                     <a :href="'/'"><span class="font-semibold text-xl tracking-tight px-6 md:px-0">Journal of Quality Engineering</span></a>
                 </div>
                 <div class="w-full sm:w-2/4 px-8 mt-4 sm:mt-0">
-                    <p class="font-bold">{{ $trans('strings.Časopis Upravljanja Kvalitetom') }}</p>
+                    <p class="font-bold">Journal of Quality Engineering</p>
                     <ul class="list-style-none mt-2">
-                        <li><a :href="'/articles'">Articles</a></li>
-                        <li><a :href="'/manual'">Instructions for authors</a></li>
+                        <li><a :href="'/browse-issues'">Browse issues</a></li>
+                        <li><a :href="'/instructions-for-authors'">Instructions for authors</a></li>
                         <li><a :href="'/about'">About the journal</a></li>
                         <li><a :href="'/contact'">Contact</a></li>
                     </ul>

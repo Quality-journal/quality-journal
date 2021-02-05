@@ -13,7 +13,6 @@
                 </div>
             </div>
         </div>
-    <metric-component></metric-component>
     </div>
 
 </template>

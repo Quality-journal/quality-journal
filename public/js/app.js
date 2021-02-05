@@ -3996,7 +3996,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -23318,18 +23317,18 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "w-full sm:w-2/4 px-8 mt-4 sm:mt-0" }, [
             _c("p", { staticClass: "font-bold" }, [
-              _vm._v(
-                _vm._s(_vm.$trans("strings.Časopis Upravljanja Kvalitetom"))
-              )
+              _vm._v("Journal of Quality Engineering")
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "list-style-none mt-2" }, [
               _c("li", [
-                _c("a", { attrs: { href: "/articles" } }, [_vm._v("Articles")])
+                _c("a", { attrs: { href: "/browse-issues" } }, [
+                  _vm._v("Browse issues")
+                ])
               ]),
               _vm._v(" "),
               _c("li", [
-                _c("a", { attrs: { href: "/manual" } }, [
+                _c("a", { attrs: { href: "/instructions-for-authors" } }, [
                   _vm._v("Instructions for authors")
                 ])
               ]),
@@ -23418,50 +23417,52 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._m(0), _vm._v(" "), _c("metric-component")], 1)
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6"
-        },
-        [
-          _c("div", { staticClass: "bg-white" }, [
-            _c("h1", { staticClass: "text-2xl font-semibold mt-2 pb-4" }, [
-              _vm._v("Journal of Quality Engineering")
-            ]),
-            _c("hr"),
-            _vm._v(" "),
-            _c("div", { staticClass: "flex flex-wrap py-4" }, [
-              _c("div", { staticClass: "w-full sm:w-1/4 px-2" }, [
-                _c("img", {
-                  staticClass: "mx-auto",
-                  attrs: {
-                    src:
-                      "https://www.sv-jme.eu/wp-content/uploads/2017/07/Znacka-1.png",
-                    alt: "test"
-                  }
-                })
+    return _c("div", [
+      _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6"
+          },
+          [
+            _c("div", { staticClass: "bg-white" }, [
+              _c("h1", { staticClass: "text-2xl font-semibold mt-2 pb-4" }, [
+                _vm._v("Journal of Quality Engineering")
               ]),
+              _c("hr"),
               _vm._v(" "),
-              _c("div", { staticClass: "w-full sm:w-3/4 px-2" }, [
-                _c("p", { staticClass: "text-lg" }, [
-                  _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipiscing elit. Sem nulla pharetra diam sit amet. Curabitur vitae nunc sed velit dignissim. Est velit egestas dui id. Pellentesque dignissim enim sit amet. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Semper auctor neque vitae tempus. Ut tristique et egestas quis. Ullamcorper dignissim cras tincidunt lobortis feugiat. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Non sodales neque sodales ut etiam sit."
-                  )
+              _c("div", { staticClass: "flex flex-wrap py-4" }, [
+                _c("div", { staticClass: "w-full sm:w-1/4 px-2" }, [
+                  _c("img", {
+                    staticClass: "mx-auto",
+                    attrs: {
+                      src:
+                        "https://www.sv-jme.eu/wp-content/uploads/2017/07/Znacka-1.png",
+                      alt: "test"
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "w-full sm:w-3/4 px-2" }, [
+                  _c("p", { staticClass: "text-lg" }, [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipiscing elit. Sem nulla pharetra diam sit amet. Curabitur vitae nunc sed velit dignissim. Est velit egestas dui id. Pellentesque dignissim enim sit amet. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Semper auctor neque vitae tempus. Ut tristique et egestas quis. Ullamcorper dignissim cras tincidunt lobortis feugiat. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Non sodales neque sodales ut etiam sit."
+                    )
+                  ])
                 ])
               ])
             ])
-          ])
-        ]
-      )
+          ]
+        )
+      ])
     ])
   }
 ]

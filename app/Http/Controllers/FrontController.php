@@ -21,7 +21,7 @@ class FrontController extends Controller
 
     public function about() {
         $page=Page::where('title','about')->firstOrFail();
-        return view('pages.about',['page'=>$page]);
+        return view('pages.about',['page'=>$page,'title'=>'About']);
     }
 
     public function instructions() {
@@ -32,5 +32,25 @@ class FrontController extends Controller
     public function submit_a_paper() {
         $page = Page::where('slug', 'submit-a-paper')->firstOrFail();
         return view('pages.instructions', ['page' => $page]);
+    }
+
+    public function editorialOffice() {
+        $page=Page::where('title','editorial office')->firstOrFail();
+        return view('pages.about',['page'=>$page,'title'=>'Editorial office']);
+    }
+
+    public function reviewers() {
+        $page=Page::where('title','reviewers')->firstOrFail();
+        return view('pages.about',['page'=>$page,'title'=>'Reviewers']);
+    }
+
+    public function publishingCouncil() {
+        $page=Page::where('title','publishing council')->firstOrFail();
+        return view('pages.about',['page'=>$page,'title'=>'Publishing council']);
+    }
+
+    public function ethicsAndPolicy() {
+        $page=Page::where('title','ethics and policy')->firstOrFail();
+        return view('pages.about',['page'=>$page,'title'=>'Ethics and policy']);
     }
 }

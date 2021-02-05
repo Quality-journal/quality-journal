@@ -23,6 +23,10 @@ Route::get('/', [FrontController::class, 'index'])->name('index');
 Route::get('/contact', [FrontController::class, 'contact'])->name('contact');
 Route::get('/about', [FrontController::class, 'about'])->name('about');
 Route::get('/manual', [FrontController::class, 'manual'])->name('manual');
+Route::get('/editorial-office', [FrontController::class, 'editorialOffice'])->name('editorialOffice');
+Route::get('/reviewers', [FrontController::class, 'reviewers'])->name('reviewers');
+Route::get('/publishing-council', [FrontController::class, 'publishingCouncil'])->name('publishingCouncil');
+Route::get('/ethics-and-policy', [FrontController::class, 'ethicsAndPolicy'])->name('ethicsAndPolicy');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {

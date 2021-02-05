@@ -21,14 +21,14 @@
     </ul>
   </div>
 
-  
+
 
 
 </template>
 
 <script>
     export default {
-       
+
 data() {
    return {
        slides: [
@@ -113,10 +113,10 @@ data() {
     this.playslides[0] = this.slides[0];
     this.playslides[1] = this.slides[1];
     this.play();
-	
+
   }
 }
-    
+
 </script>
 
 <style scoped>
@@ -170,12 +170,12 @@ data() {
   color: #fff;
   cursor: pointer;
   font-size: 16px;
-  font-family: 'SegoeUI-Bold';
+  font-family: 'Poppins';
   transition: font-size 0.6s ease-out;
 }
 .slider ul.indicators li .mark {
   color: #fff;
-  font-family: 'SegoeUI-Semilight';
+  font-family: 'Poppins';
 }
 .slider ul.indicators li .dot {
   position: absolute;

@@ -6,24 +6,21 @@
           <div class="px-4 py-5  sm:p-6 formdiv">
             <div class="grid grid-cols-6 gap-6">
               <div class="col-span-12">
-                <label for="first_name" class="block text-sm font-medium text-gray-700">Firstname and lastname</label>
-                <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-1/2 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
               </div>
-
               <div class="col-span-12">
-                <label for="email_address" class="block text-sm font-medium text-gray-700">Email address</label>
-                <input type="text"  name="email_address" id="email_address" autocomplete="email" class="w-full md:w-1/2 mt-1 focus:ring-indigo-500 focus:border-indigo-500 block shadow-sm sm:text-sm border-gray-300 rounded-md">
+               <label for="name" class="leading-7 text-sm text-gray-600">Email address</label>
+                <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
               </div>
                <div class="col-span-12">
-                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                <textarea rows="10" name="message" id="message" autocomplete="message" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
-              </div>  
+                <label for="name" class="leading-7 text-sm text-gray-600">Message</label>
+                <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
             </div>
           </div>
           <div class="px-4 py-3 bg-gray-50 text-right sm:px-6 formdiv">
-            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-              Send
-            </button>
+              <button type="submit" class="text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg">Send</button>
           </div>
         </div>
       </form>
@@ -34,7 +31,7 @@
 
 <script>
     export default {
- 
+
     };
 </script>
 

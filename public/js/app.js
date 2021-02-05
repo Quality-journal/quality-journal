@@ -3858,6 +3858,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -3904,9 +3917,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -3922,6 +3932,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
+//
 //
 //
 //
@@ -22877,12 +22888,20 @@ var render = function() {
             1
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "w-full sm:w-1/3 px-8" }, [
-            _vm._m(0),
+          _c("div", { staticClass: "w-full sm:w-1/3 px-8 text-lg" }, [
+            _c("p", { staticClass: "text-xl font-semibold leading-6" }, [
+              _vm._v("\n                    Publisher:\n                ")
+            ]),
             _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _c("p", { staticClass: "mt-3 leading-6" }, [
+            _c("p", { staticClass: "mt-1" }, [
+              _vm._v("\n                    UKAS"),
+              _c("br"),
+              _vm._v("\n                    Udruženje za kvalitet,"),
+              _c("br"),
+              _vm._v("\n                    akreditaciju i standardizaciju"),
+              _c("br"),
+              _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
+              _c("br"),
               _vm._v("\n                    P: "),
               _c(
                 "a",
@@ -22898,9 +22917,47 @@ var render = function() {
                 "a",
                 {
                   staticClass: "text-blue-600 hover:text-blue-800",
-                  attrs: { href: "mailto: test@test.com" }
+                  attrs: { href: "mailto: office@q-sci.rs" }
                 },
-                [_vm._v("test@test.com")]
+                [_vm._v("office@q-sci.rs")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "text-xl font-semibold leading-6 mt-4" }, [
+              _vm._v("\n                    Editor in chief:\n                ")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "mt-1" }, [
+              _vm._v("\n                    Miloš Vasić"),
+              _c("br"),
+              _vm._v("\n                    E: "),
+              _c(
+                "a",
+                {
+                  staticClass: "text-blue-600 hover:text-blue-800",
+                  attrs: { href: "mailto: office@q-sci.rs" }
+                },
+                [_vm._v("office@q-sci.rs")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "text-xl font-semibold leading-6 mt-4" }, [
+              _vm._v(
+                "\n                    Editorial office:\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "mt-1" }, [
+              _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
+              _c("br"),
+              _vm._v("\n                    E: "),
+              _c(
+                "a",
+                {
+                  staticClass: "text-blue-600 hover:text-blue-800",
+                  attrs: { href: "mailto: office@q-sci.rs" }
+                },
+                [_vm._v("office@q-sci.rs")]
               )
             ])
           ])
@@ -22909,32 +22966,7 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", { staticClass: "text-lg font-semibold leading-6" }, [
-      _vm._v("\n                    UKAS"),
-      _c("br"),
-      _vm._v(
-        "\n                    Udruženje za kvalitet, akreditaciju i standardizaciju\n                "
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", { staticClass: "mt-3 leading-6" }, [
-      _vm._v("\n                    Stari Grad, Takovska 5,"),
-      _c("br"),
-      _vm._v("\n                    11200 Beograd"),
-      _c("br"),
-      _vm._v("\n                    Srbija\n                ")
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -22973,21 +23005,16 @@ var staticRenderFns = [
                 _c(
                   "label",
                   {
-                    staticClass: "block text-sm font-medium text-gray-700",
-                    attrs: { for: "first_name" }
+                    staticClass: "leading-7 text-sm text-gray-600",
+                    attrs: { for: "name" }
                   },
-                  [_vm._v("Firstname and lastname")]
+                  [_vm._v("Name")]
                 ),
                 _vm._v(" "),
                 _c("input", {
                   staticClass:
-                    "mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-1/2 shadow-sm sm:text-sm border-gray-300 rounded-md",
-                  attrs: {
-                    type: "text",
-                    name: "first_name",
-                    id: "first_name",
-                    autocomplete: "given-name"
-                  }
+                    "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out",
+                  attrs: { type: "text", id: "name", name: "name" }
                 })
               ]),
               _vm._v(" "),
@@ -22995,21 +23022,16 @@ var staticRenderFns = [
                 _c(
                   "label",
                   {
-                    staticClass: "block text-sm font-medium text-gray-700",
-                    attrs: { for: "email_address" }
+                    staticClass: "leading-7 text-sm text-gray-600",
+                    attrs: { for: "name" }
                   },
                   [_vm._v("Email address")]
                 ),
                 _vm._v(" "),
                 _c("input", {
                   staticClass:
-                    "w-full md:w-1/2 mt-1 focus:ring-indigo-500 focus:border-indigo-500 block shadow-sm sm:text-sm border-gray-300 rounded-md",
-                  attrs: {
-                    type: "text",
-                    name: "email_address",
-                    id: "email_address",
-                    autocomplete: "email"
-                  }
+                    "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out",
+                  attrs: { type: "email", id: "email", name: "email" }
                 })
               ]),
               _vm._v(" "),
@@ -23017,21 +23039,16 @@ var staticRenderFns = [
                 _c(
                   "label",
                   {
-                    staticClass: "block text-sm font-medium text-gray-700",
-                    attrs: { for: "message" }
+                    staticClass: "leading-7 text-sm text-gray-600",
+                    attrs: { for: "name" }
                   },
                   [_vm._v("Message")]
                 ),
                 _vm._v(" "),
                 _c("textarea", {
                   staticClass:
-                    "mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md",
-                  attrs: {
-                    rows: "10",
-                    name: "message",
-                    id: "message",
-                    autocomplete: "message"
-                  }
+                    "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out",
+                  attrs: { id: "message", name: "message" }
                 })
               ])
             ])
@@ -23045,10 +23062,10 @@ var staticRenderFns = [
                 "button",
                 {
                   staticClass:
-                    "inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+                    "text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg",
                   attrs: { type: "submit" }
                 },
-                [_vm._v("\r\n              Send\r\n            ")]
+                [_vm._v("Send")]
               )
             ]
           )
@@ -23123,6 +23140,12 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("li", [
+                _c("a", { attrs: { href: "/submit-a-paper" } }, [
+                  _vm._v("Submit a paper")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", [
                 _c("a", { attrs: { href: "/contact" } }, [_vm._v("Contact")])
               ])
             ])
@@ -23147,13 +23170,14 @@ var staticRenderFns = [
       _c("p", { staticClass: "font-bold" }, [_vm._v("Contact")]),
       _vm._v(" "),
       _c("p", { staticClass: "mt-2" }, [
-        _vm._v("\n                    Univerzitet u Beogradu"),
+        _vm._v("\n                    UKAS"),
         _c("br"),
-        _vm._v("\n                    Mašinski Fakultet"),
+        _vm._v("\n                    Udruženje za kvalitet,"),
         _c("br"),
-        _vm._v("\n                    Kraljice Marije 16"),
+        _vm._v("\n                    akreditaciju i standardizaciju"),
         _c("br"),
-        _vm._v("\n                    12000 Beograd, Srbija\n                ")
+        _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
+        _c("br")
       ])
     ])
   },

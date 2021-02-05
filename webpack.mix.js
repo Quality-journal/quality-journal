@@ -11,9 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-const WebpackShellPluginNext = require('webpack-shell-plugin-next');
+//const WebpackShellPluginNext = require('webpack-shell-plugin-next');
 
-mix.webpackConfig({
+/*mix.webpackConfig({
     plugins:
         [
             new WebpackShellPluginNext({
@@ -23,7 +23,7 @@ mix.webpackConfig({
                 onBuildEnd:[]
             })
         ]
-});
+});*/
 
 mix.js('resources/js/app.js', 'public/js').vue().
     postCss('resources/css/app.css', 'public/css', [

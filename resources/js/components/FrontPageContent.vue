@@ -3,7 +3,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6">
                 <div class="bg-white">
-                    <h1 class="text-2xl font-semibold mt-2 pb-4">Quality Journal</h1><hr>
+                    <h1 class="text-2xl font-semibold mt-2 pb-4">Journal of Quality Engineering</h1><hr>
                     <div class="flex flex-wrap py-4">
                         <div class="w-full sm:w-1/4 px-2"><img class="mx-auto" src="https://www.sv-jme.eu/wp-content/uploads/2017/07/Znacka-1.png" alt="test"></div>
                         <div class="w-full sm:w-3/4 px-2">

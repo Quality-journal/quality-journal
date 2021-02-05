@@ -2,7 +2,7 @@
 
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6">
-            <h1 class="text-2xl font-semibold mt-2 pb-4 p-2">{{ $trans('strings.Kontakt') }}</h1><hr>
+            <h1 class="text-2xl font-semibold mt-2 pb-4 p-2">Contact</h1><hr>
             <div class="flex flex-wrap py-4">
                 <div class="w-full sm:w-2/3 px-2">
                 <contact-form-component></contact-form-component></div>

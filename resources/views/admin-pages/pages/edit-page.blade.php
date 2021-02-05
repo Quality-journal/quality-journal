@@ -13,7 +13,7 @@
             </p>
             <span  class="pb-4">
                 <a href="{{ route('pages.index') }}" class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"><i class="fas fa-arrow-left"></i>  Nazad</a>
-            </span> 
+            </span>
         </div>
 
         <div>
@@ -23,7 +23,7 @@
 
                 <div class="mt-2">
                     <label class="block text-gray-600 mb-4" for="content">Content</label>
-                    <textarea class="editor" id="content" name="content" required>{{ $page->content }}</textarea>
+                    <textarea class="editor" id="content" name="content">{{ $page->content }}</textarea>
                 </div>
                 <div class="mt-6">
                     <button type="submit" class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded">Submit</button>

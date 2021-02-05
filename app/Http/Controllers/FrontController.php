@@ -27,10 +27,4 @@ class FrontController extends Controller
     public function manual() {
         return view('pages.manual');
     }
-
-    public function lang($lang)
-    {
-        session(['locale' => $lang]);
-        return back();
-    }
 }

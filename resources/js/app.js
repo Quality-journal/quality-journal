@@ -1,6 +1,5 @@
 import Vue from 'vue';
 
-Vue.component('front-page-content', require('./components/FrontPageContent.vue').default);
 Vue.component('navigation-component', require('./components/Navigation.vue').default);
 Vue.component('footer-component', require('./components/Footer.vue').default);
 Vue.component('slider-component', require('./components/Slider.vue').default);

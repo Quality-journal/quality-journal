@@ -9,9 +9,6 @@ use Illuminate\Support\Facades\App;
 class FrontController extends Controller
 {
     public function index() {
-        if(!session()->has('locale')){
-            session(['locale' => 'sr']);
-        }
         return view('welcome');
     }
 
@@ -53,4 +50,6 @@ class FrontController extends Controller
         $page=Page::where('title','ethics and policy')->firstOrFail();
         return view('pages.about',['page'=>$page,'title'=>'Ethics and policy']);
     }
+
+
 }

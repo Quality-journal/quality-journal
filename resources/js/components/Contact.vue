@@ -8,12 +8,11 @@
                 <contact-form-component></contact-form-component></div>
                 <div class="w-full sm:w-1/3 px-8">
                     <p class="text-lg font-semibold leading-6">
-                        Univerzitet u Beogradu<br>
-                        Mašinski Fakultet<br>
-                        Časopis Upravljanja Kvalitetom
+                        UKAS<br>
+                        Udruženje za kvalitet, akreditaciju i standardizaciju
                     </p>
                     <p class="mt-3 leading-6">
-                        Kraljice Marije 61,<br>
+                        Stari Grad, Takovska 5,<br>
                         11200 Beograd<br>
                         Srbija
                     </p>

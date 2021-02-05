@@ -6,6 +6,7 @@ use App\Http\Controllers\IssueController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\SelectionController;
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\BrowseIssuesController;
 
 
 /*
@@ -28,6 +29,8 @@ Route::get('/editorial-office', [FrontController::class, 'editorialOffice'])->na
 Route::get('/reviewers', [FrontController::class, 'reviewers'])->name('reviewers');
 Route::get('/publishing-council', [FrontController::class, 'publishingCouncil'])->name('publishingCouncil');
 Route::get('/ethics-and-policy', [FrontController::class, 'ethicsAndPolicy'])->name('ethicsAndPolicy');
+Route::get('/browse-issues', [BrowseIssuesController::class, 'index'])->name('browseIssues');
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {

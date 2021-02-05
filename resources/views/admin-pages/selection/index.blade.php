@@ -45,7 +45,7 @@
                                     </div>
                                 @endforeach
                                 <div class="flex justify-between py-2">
-                                    <a href="{{ route('issues.create') }}" class="w-full bg-gray-100 cta-btn font-semibold py-2 mt-2 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:bg-gray-200 flex items-center justify-center">
+                                    <a href="{{ route('issues.create',['selection_id'=>$selection->id]) }}" class="w-full bg-gray-100 cta-btn font-semibold py-2 mt-2 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:bg-gray-200 flex items-center justify-center">
                                         <i class="fas fa-plus mr-3"></i> Novo izdanje
                                     </a>
                                 </div>

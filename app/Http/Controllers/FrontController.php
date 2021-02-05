@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Page;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 
@@ -19,7 +20,8 @@ class FrontController extends Controller
     }
 
     public function about() {
-        return view('pages.about');
+        $page=Page::where('title','about')->firstOrFail();
+        return view('pages.about',['page'=>$page]);
     }
 
     public function manual() {

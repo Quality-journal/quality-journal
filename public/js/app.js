@@ -24808,7 +24808,7 @@ var render = function() {
                     _vm._v(
                       "\n                        " +
                         _vm._s(_vm.$trans("strings.Kontakt")) +
-                        "\n                    "
+                        " \n                    "
                     )
                   ]
                 )

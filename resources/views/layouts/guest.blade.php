@@ -23,6 +23,16 @@
         <script>
             localStorage.setItem('locale', document.documentElement.lang);
         </script>
+        <style>
+        .text-big{
+            font-size: 25px;
+            
+            }
+        .text-huge{
+        font-size: 30px;
+       
+        }
+        </style>
     </head>
     <body>
         <div id="app" class="font-sans text-gray-900 antialiased">

@@ -23,7 +23,8 @@ class IssueController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {   $id=request()->id;
+    {   
+        $id=request()->selection_id;
         return view('admin-pages.issue.create',['selection_id'=>$id]);
     }
 

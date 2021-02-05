@@ -17,14 +17,14 @@
                         <a :href="'#'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
                             {{ $trans('strings.Članci') }}
                         </a>
-                        <a :href="'/manual'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
+                        <a :href="'/manual'"  class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
                             {{ $trans('strings.Uputstvo za autore') }}
                         </a>
                         <a :href="'/about'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
                             {{ $trans('strings.O Časopisu') }}
                         </a>
                         <a :href="'/contact'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
-                            {{ $trans('strings.Kontakt') }}
+                            {{ $trans('strings.Kontakt') }} 
                         </a>
                     </div>
                 </div>

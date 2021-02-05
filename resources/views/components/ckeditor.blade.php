@@ -69,5 +69,6 @@
     <style>
         .ck-content p { margin: 0; }
         .ck-content { min-height: 300px; }
-        .ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable, .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners { padding-left: 30px; }
+		.ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable, .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners { padding-left: 30px; }
+		
     </style>

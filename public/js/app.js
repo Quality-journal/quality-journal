@@ -4079,6 +4079,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -23414,6 +23417,20 @@ var render = function() {
             },
             [
               _c("div", { staticClass: "text-lg lg:flex-grow" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4",
+                    attrs: { href: "/search" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        Search\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
                 _c(
                   "a",
                   {

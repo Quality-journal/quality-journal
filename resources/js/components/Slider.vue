@@ -199,7 +199,7 @@ data() {
 .slider ul.indicators li.active .title {
   transition: font-size 0.6s ease-in;
   font-size: 36px;
-  font-family: 'SegoeUI-Light';
+  font-family: 'Poppins';
 }
 .slider ul.indicators li.active .progress .fill {
   height: 100%;

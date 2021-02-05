@@ -5,20 +5,33 @@
             <h1 class="text-2xl font-semibold mt-2 pb-4 p-2">Contact</h1><hr>
             <div class="flex flex-wrap py-4">
                 <div class="w-full sm:w-2/3 px-2">
-                <contact-form-component></contact-form-component></div>
-                <div class="w-full sm:w-1/3 px-8">
-                    <p class="text-lg font-semibold leading-6">
+                    <contact-form-component></contact-form-component>
+                </div>
+                <div class="w-full sm:w-1/3 px-8 text-lg">
+                    <p class="text-xl font-semibold leading-6">
+                        Publisher:
+                    </p>
+                    <p class="mt-1">
                         UKAS<br>
-                        Udruženje za kvalitet, akreditaciju i standardizaciju
-                    </p>
-                    <p class="mt-3 leading-6">
-                        Stari Grad, Takovska 5,<br>
-                        11200 Beograd<br>
-                        Srbija
-                    </p>
-                    <p class="mt-3 leading-6">
+                        Udruženje za kvalitet,<br>
+                        akreditaciju i standardizaciju<br>
+                        Takovska 5, Belgrade, Serbia<br>
                         P: <a class="text-blue-600 hover:text-blue-800" :href="'tel:+381111234567'">+381 11 1234567</a><br>
-                        E: <a class="text-blue-600 hover:text-blue-800" :href="'mailto: test@test.com'">test@test.com</a>
+                        E: <a class="text-blue-600 hover:text-blue-800" :href="'mailto: office@q-sci.rs'">office@q-sci.rs</a>
+                    </p>
+                     <p class="text-xl font-semibold leading-6 mt-4">
+                        Editor in chief:
+                    </p>
+                    <p class="mt-1">
+                        Miloš Vasić<br>
+                        E: <a class="text-blue-600 hover:text-blue-800" :href="'mailto: office@q-sci.rs'">office@q-sci.rs</a>
+                    </p>
+                     <p class="text-xl font-semibold leading-6 mt-4">
+                        Editorial office:
+                    </p>
+                    <p class="mt-1">
+                        Takovska 5, Belgrade, Serbia<br>
+                        E: <a class="text-blue-600 hover:text-blue-800" :href="'mailto: office@q-sci.rs'">office@q-sci.rs</a>
                     </p>
                 </div>
             </div>

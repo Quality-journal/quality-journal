@@ -12,16 +12,17 @@
                         <li><a :href="'/browse-issues'">Browse issues</a></li>
                         <li><a :href="'/instructions-for-authors'">Instructions for authors</a></li>
                         <li><a :href="'/about'">About the journal</a></li>
+                        <li><a :href="'/submit-a-paper'">Submit a paper</a></li>
                         <li><a :href="'/contact'">Contact</a></li>
                     </ul>
                 </div>
                 <div class="w-full sm:w-1/4 px-8">
                     <p class="font-bold">Contact</p>
                     <p class="mt-2">
-                        Univerzitet u Beogradu<br>
-                        Mašinski Fakultet<br>
-                        Kraljice Marije 16<br>
-                        12000 Beograd, Srbija
+                        UKAS<br>
+                        Udruženje za kvalitet,<br>
+                        akreditaciju i standardizaciju<br>
+                        Takovska 5, Belgrade, Serbia<br>
                     </p>
                 </div>
             </div>

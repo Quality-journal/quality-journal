@@ -14,6 +14,9 @@
                 </div>
                 <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" v-bind:class="{ 'hidden': !showMobileMenu}">
                     <div class="text-lg lg:flex-grow">
+                         <a :href="'/search'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
+                            Search
+                        </a>
                         <a :href="'/browse-issues'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
                             Browse issues
                         </a>

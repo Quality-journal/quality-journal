@@ -1,6 +1,6 @@
 <template>
 
-    <div class="bg-blue-500">
+    <div class="bg-yellow-500">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 text-white h-auto">
             <div class="flex flex-wrap py-4 px-4">
                 <div class="w-full sm:w-1/4 px-2">
@@ -43,3 +43,8 @@
     }
 </script>
 
+<style>
+    .bg-color{
+        background-color: #FA5F1A;
+    }
+</style>

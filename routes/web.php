@@ -22,7 +22,9 @@ use App\Http\Controllers\ArticlesController;
 Route::get('/', [FrontController::class, 'index'])->name('index');
 Route::get('/contact', [FrontController::class, 'contact'])->name('contact');
 Route::get('/about', [FrontController::class, 'about'])->name('about');
-Route::get('/manual', [FrontController::class, 'manual'])->name('manual');
+Route::get('/instructions-for-authors', [FrontController::class, 'instructions'])->name('instructions');
+Route::get('/submit-a-paper', [FrontController::class, 'submit_a_paper'])->name('submit_a_paper');
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {

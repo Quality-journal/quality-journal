@@ -21,14 +21,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
         <style>
-        .text-big{
-            font-size: 25px;
-
+            .ck-content .text-tiny {
+                font-size: 0.75rem;
+                line-height: 1rem;
             }
-        .text-huge{
-        font-size: 30px;
 
-        }
+            .ck-content .text-small {
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+            }
+
+            .ck-content .text-big {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+            }
+
+            .ck-content .text-huge {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
         </style>
     </head>
     <body>

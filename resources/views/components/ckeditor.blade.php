@@ -51,8 +51,24 @@
 						'tableProperties'
 					]
 				},
-				licenseKey: '',
-
+                licenseKey: '',
+                fontSize: {
+                    options: [
+                        'tiny',
+                        'small',
+                        'big',
+                        'huge',
+                        8,
+                        10,
+                        12,
+                        14,
+                        'default',
+                        18,
+                        20,
+                        22,
+                        24
+                    ],
+                },
 			} )
 			.then( editor => {
 				window.editor = editor;
@@ -70,5 +86,5 @@
         .ck-content p { margin: 0; }
         .ck-content { min-height: 300px; }
 		.ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable, .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners { padding-left: 30px; }
-		
+
     </style>

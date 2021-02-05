@@ -24,7 +24,13 @@ class FrontController extends Controller
         return view('pages.about',['page'=>$page]);
     }
 
-    public function manual() {
-        return view('pages.manual');
+    public function instructions() {
+        $page = Page::where('slug', 'instructions-for-authors')->firstOrFail();
+        return view('pages.instructions', ['page' => $page]);
+    }
+
+    public function submit_a_paper() {
+        $page = Page::where('slug', 'submit-a-paper')->firstOrFail();
+        return view('pages.instructions', ['page' => $page]);
     }
 }

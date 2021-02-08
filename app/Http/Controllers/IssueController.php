@@ -40,9 +40,8 @@ class IssueController extends Controller
         $issue=Issue::create($request->except(['file']));
         $path = $request->file('image')->store('issue_images');
         $issue->image=$path;
-
         $issue->save();
-        return back()->with(['message'=>'Issue created!']);
+        return redirect('/selections')->with(['message'=>'Issue created!']);
     }
 
     /**
@@ -77,7 +76,7 @@ class IssueController extends Controller
     public function update(Request $request, Issue $issue)
     {
         $issue->update($request->all());
-        return back()->with(['message'=>'Issue edited!']);
+        return redirect('/selections')->with(['message'=>'Issue edited!']);
     }
 
     /**
@@ -89,5 +88,6 @@ class IssueController extends Controller
     public function destroy(Issue $issue)
     {
         $issue->delete();
+        return redirect('/selections')->with(['message'=>'Issue deleted!']);
     }
 }

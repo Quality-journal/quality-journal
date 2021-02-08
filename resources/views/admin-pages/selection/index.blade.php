@@ -34,8 +34,9 @@
                 <div class="flex flex-wrap -m-4 text-center">
 
                     <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
-                        <div class="bg-white px-4 py-6 rounded-lg">
+                        <div class="bg-white px-4 py-6 rounded-lg mb-10">
                             @foreach($selections as $selection)
+                            
                                 <div class="float-right"><a href="{{ route('selections.edit', ['selection'=>$selection->id]) }}"><i class="fas fa-edit"></i></a></div>
                                 <div class="w-24 h-24 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"><h4 class="text-2xl font-bold">{{ $selection->title }}</h4></div><br>
                                 @foreach($selection->issues as $issue)
@@ -49,6 +50,7 @@
                                         <i class="fas fa-plus mr-3"></i> Novo izdanje
                                     </a>
                                 </div>
+                           
                             @endforeach
                         </div>
                     </div>

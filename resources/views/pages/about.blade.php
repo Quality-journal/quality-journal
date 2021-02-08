@@ -5,7 +5,7 @@
 
              <div class="flex flex-wrap py-4">
 
-                <div class="w-3/4 sm:w-1/4 px-4 bg-gray-200 py-2 mt-3">
+                <div class="w-3/4 sm:w-1/4 px-4 bg-gray-50 py-2 mt-3">
                     <p class="text-lg font-semibold mb-1 text-orange text-left">About the journal</p>
                     <a href="/editorial-office" class="ml-5 p-2 hover:text-orange">Editorial office</a><br>
                     <a href="/reviewers" class="ml-5 p-2 hover:text-orange">Reviewers</a><br>

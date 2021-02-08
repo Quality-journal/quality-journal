@@ -1,4 +1,4 @@
-<div class="w-3/4 sm:w-1/4 px-6 bg-gray-200 py-2 mt-3 h-64 min-h-full">
+<div class="w-3/4 sm:w-1/4 px-6 bg-gray-50 py-2 mt-3 h-64 min-h-full">
 
     <p class="text-xl font-semibold mb-5 text-dark border-b border-solid border-black text-left pb-2">Selections</p>
 

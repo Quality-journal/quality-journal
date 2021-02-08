@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Issue;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class IssueController extends Controller
 {
@@ -37,9 +39,13 @@ class IssueController extends Controller
     public function store(Request $request)
     {
 
-        $issue=Issue::create($request->except(['file']));
-        $path = $request->file('image')->store('issue_images');
-        $issue->image=$path;
+        $issue=Issue::create($request->except(['image']));
+        $ext=$request->file('image')->getClientOriginalExtension();
+        $filename = Str::snake($request->title).".".$ext;
+        Storage::putFileAs("public/images", $request->image, $filename);
+        $issue->image = $filename;
+      //  $path = $request->file('image')->store('public/images');
+      //  $issue->image=$path;
         $issue->save();
         return redirect('/selections')->with(['message'=>'Issue created!']);
     }

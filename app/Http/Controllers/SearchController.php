@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Article;
 use App\Models\Page;
+use App\Models\Issue;
+use App\Models\Article;
 use Illuminate\Http\Request;
 
 class SearchController extends Controller 
@@ -36,7 +37,15 @@ class SearchController extends Controller
         ->orWhere('recognitions', 'LIKE', "%{$search}%")
         ->orWhere('reference', 'LIKE', "%{$search}%")  
         ->get();
-        $merged = $pages->merge($articles);
+        $issues=Issue::query()
+        ->where('title', 'LIKE', "%{$search}%") 
+        ->orWhere('slug', 'LIKE', "%{$search}%")
+        ->orWhere('description', 'LIKE', "%{$search}%")
+        ->orWhere('keywords', 'LIKE', "%{$search}%")
+        ->orWhere('content', 'LIKE', "%{$search}%") 
+        ->orWhere('info', 'LIKE', "%{$search}%") 
+        ->get();
+        $merged = $pages->concat($articles)->concat($issues);
         return view('pages.search',['results'=>$merged]);
     }
 }

@@ -21,4 +21,8 @@ class Issue extends Model
     {
         return $this->belongsTo(Selection::class);
     }
+
+    public function url(){
+        return '/issue/'.$this->slug;
+    }
 }

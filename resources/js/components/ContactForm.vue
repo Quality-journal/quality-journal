@@ -2,8 +2,8 @@
 
 <div>
    <form action="#" method="POST">
-        <div  class="shadow overflow-hidden sm:rounded-md">
-          <div class="px-4 py-5  sm:p-6 formdiv">
+        <div class="shadow overflow-hidden">
+          <div class="px-4 py-5 sm:p-6 formdiv">
             <div class="grid grid-cols-6 gap-6">
               <div class="col-span-12">
                 <label for="name" class="leading-7 text-sm text-gray-600">Name</label>

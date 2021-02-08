@@ -13,7 +13,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-       
+
         <style>
             /*@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
             .font-family-karla { font-family: karla; }*/
@@ -27,9 +27,9 @@
             .nav-item:hover { background: #1947ee; }
             .account-link:hover { background: #3d68ff; }
 
-            
-        
-            
+
+
+
         </style>
 
     </head>

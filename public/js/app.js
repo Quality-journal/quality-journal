@@ -4246,7 +4246,12 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.component('about-component', __webpack_
 vue__WEBPACK_IMPORTED_MODULE_0__.default.component('metric-component', __webpack_require__(/*! ./components/Metric.vue */ "./resources/js/components/Metric.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_0__.default.component('contact-form-component', __webpack_require__(/*! ./components/ContactForm.vue */ "./resources/js/components/ContactForm.vue").default);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
-  el: '#app'
+  el: '#app',
+  data: function data() {
+    return {
+      toggle: false
+    };
+  }
 });
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
@@ -4375,7 +4380,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.slider[data-v-872262e8] {\r\n  position: relative;\r\n  z-index: 1;\r\n  overflow: hidden;\r\n  height: 70vh;\n}\n.slider ul[data-v-872262e8] {\r\n  list-style: none;\n}\n.slider ul.slides[data-v-872262e8] {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n  transition: top 800ms;\n}\n.slider ul.slides li[data-v-872262e8] {\r\n  height: 100%;\n}\n.slider ul.slides li .img[data-v-872262e8] {\r\n  height: 100%;\r\n  background-size: cover;\r\n  background-position: 50%;\n}\n.slider ul.indicators[data-v-872262e8] {\r\n  position: absolute;\r\n  padding-right: 40px;\r\n  right: 0;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n  z-index: 2;\r\n  text-align: right;\n}\n.slider ul.indicators li[data-v-872262e8] {\r\n  clear: both;\n}\n.slider ul.indicators li .item[data-v-872262e8] {\r\n  position: relative;\r\n  margin-bottom: 16px;\r\n  float: right;\n}\n.slider ul.indicators li:last-child .item[data-v-872262e8] {\r\n  margin-bottom: 0;\n}\n.slider ul.indicators li .title[data-v-872262e8] {\r\n  color: #fff;\r\n  cursor: pointer;\r\n  font-size: 16px;\r\n  font-family: 'Poppins';\r\n  transition: font-size 0.6s ease-out;\n}\n.slider ul.indicators li .mark[data-v-872262e8] {\r\n  color: #fff;\r\n  font-family: 'Poppins';\n}\n.slider ul.indicators li .dot[data-v-872262e8] {\r\n  position: absolute;\r\n  top: 50%;\r\n  right: -20px;\r\n  margin-top: -5.5px;\r\n  margin-left: 10px;\r\n  width: 11px;\r\n  height: 11px;\r\n  background: #fff;\r\n  border-radius: 50%;\n}\n.slider ul.indicators li .progress[data-v-872262e8] {\r\n  position: relative;\r\n  display: inline-block;\r\n  width: 100%;\r\n  height: 2px;\r\n  margin: 8px 0;\r\n  background: rgba(255,255,255,0.5);\n}\n.slider ul.indicators li.active .title[data-v-872262e8] {\r\n  transition: font-size 0.6s ease-in;\r\n  font-size: 36px;\r\n  font-family: 'Poppins';\n}\n.slider ul.indicators li.active .progress .fill[data-v-872262e8] {\r\n  height: 100%;\r\n  background: #fff;\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.slider[data-v-872262e8] {\n  position: relative;\n  z-index: 1;\n  overflow: hidden;\n  height: 70vh;\n}\n.slider ul[data-v-872262e8] {\n  list-style: none;\n}\n.slider ul.slides[data-v-872262e8] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  transition: top 800ms;\n}\n.slider ul.slides li[data-v-872262e8] {\n  height: 100%;\n}\n.slider ul.slides li .img[data-v-872262e8] {\n  height: 100%;\n  background-size: cover;\n  background-position: 50%;\n}\n.slider ul.indicators[data-v-872262e8] {\n  position: absolute;\n  padding-right: 40px;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n  z-index: 2;\n  text-align: right;\n}\n.slider ul.indicators li[data-v-872262e8] {\n  clear: both;\n}\n.slider ul.indicators li .item[data-v-872262e8] {\n  position: relative;\n  margin-bottom: 16px;\n  float: right;\n}\n.slider ul.indicators li:last-child .item[data-v-872262e8] {\n  margin-bottom: 0;\n}\n.slider ul.indicators li .title[data-v-872262e8] {\n  color: #fff;\n  cursor: pointer;\n  font-size: 16px;\n  font-family: 'Poppins';\n  transition: font-size 0.6s ease-out;\n}\n.slider ul.indicators li .mark[data-v-872262e8] {\n  color: #fff;\n  font-family: 'Poppins';\n}\n.slider ul.indicators li .dot[data-v-872262e8] {\n  position: absolute;\n  top: 50%;\n  right: -20px;\n  margin-top: -5.5px;\n  margin-left: 10px;\n  width: 11px;\n  height: 11px;\n  background: #fff;\n  border-radius: 50%;\n}\n.slider ul.indicators li .progress[data-v-872262e8] {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 2px;\n  margin: 8px 0;\n  background: rgba(255,255,255,0.5);\n}\n.slider ul.indicators li.active .title[data-v-872262e8] {\n  transition: font-size 0.6s ease-in;\n  font-size: 36px;\n  font-family: 'Poppins';\n}\n.slider ul.indicators li.active .progress .fill[data-v-872262e8] {\n  height: 100%;\n  background: #fff;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22877,23 +22882,29 @@ var render = function() {
         staticClass: "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6"
       },
       [
-        _c("h1", { staticClass: "text-2xl font-semibold mt-2 pb-4 p-2" }, [
-          _vm._v("Contact")
-        ]),
+        _c(
+          "h1",
+          {
+            staticClass: "text-2xl font-semibold mt-2 pb-4 py-2 text-yellow-500"
+          },
+          [_vm._v("Contact")]
+        ),
         _c("hr"),
         _vm._v(" "),
         _c("div", { staticClass: "flex flex-wrap py-4" }, [
           _c(
             "div",
-            { staticClass: "w-full sm:w-2/3 px-2" },
+            { staticClass: "w-full sm:w-2/3 mb-5" },
             [_c("contact-form-component")],
             1
           ),
           _vm._v(" "),
           _c("div", { staticClass: "w-full sm:w-1/3 px-8 text-lg" }, [
-            _c("p", { staticClass: "text-xl font-semibold leading-6" }, [
-              _vm._v("\n                    Publisher:\n                ")
-            ]),
+            _c(
+              "p",
+              { staticClass: "text-xl font-semibold leading-6 text-orange" },
+              [_vm._v("\n                    Publisher:\n                ")]
+            ),
             _vm._v(" "),
             _c("p", { staticClass: "mt-1" }, [
               _vm._v("\n                    UKAS"),
@@ -22925,9 +22936,17 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "text-xl font-semibold leading-6 mt-4" }, [
-              _vm._v("\n                    Editor in chief:\n                ")
-            ]),
+            _c(
+              "p",
+              {
+                staticClass: "text-xl font-semibold leading-6 mt-4 text-orange"
+              },
+              [
+                _vm._v(
+                  "\n                    Editor in chief:\n                "
+                )
+              ]
+            ),
             _vm._v(" "),
             _c("p", { staticClass: "mt-1" }, [
               _vm._v("\n                    Miloš Vasić"),
@@ -22943,11 +22962,17 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "text-xl font-semibold leading-6 mt-4" }, [
-              _vm._v(
-                "\n                    Editorial office:\n                "
-              )
-            ]),
+            _c(
+              "p",
+              {
+                staticClass: "text-xl font-semibold leading-6 mt-4 text-orange"
+              },
+              [
+                _vm._v(
+                  "\n                    Editorial office:\n                "
+                )
+              ]
+            ),
             _vm._v(" "),
             _c("p", { staticClass: "mt-1" }, [
               _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
@@ -23000,8 +23025,8 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("form", { attrs: { action: "#", method: "POST" } }, [
-        _c("div", { staticClass: "shadow overflow-hidden sm:rounded-md" }, [
-          _c("div", { staticClass: "px-4 py-5  sm:p-6 formdiv" }, [
+        _c("div", { staticClass: "shadow overflow-hidden" }, [
+          _c("div", { staticClass: "px-4 py-5 sm:p-6 formdiv" }, [
             _c("div", { staticClass: "grid grid-cols-6 gap-6" }, [
               _c("div", { staticClass: "col-span-12" }, [
                 _c(
@@ -23098,7 +23123,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "bg-yellow-500" }, [
+  return _c("div", { staticClass: "bg-orange" }, [
     _c(
       "div",
       { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 text-white h-auto" },
@@ -23357,7 +23382,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "bg-yellow-500" }, [
+  return _c("div", { staticClass: "bg-orange" }, [
     _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
       _c(
         "nav",
@@ -23382,7 +23407,7 @@ var render = function() {
               "button",
               {
                 staticClass:
-                  "flex items-center px-3 py-2 text-teal-200 hover:text-white",
+                  "flex items-center px-3 py-2 text-white hover:text-white",
                 on: { click: _vm.toggleMobileMenu }
               },
               [

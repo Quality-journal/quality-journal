@@ -11,6 +11,11 @@ Vue.component('contact-form-component', require('./components/ContactForm.vue').
 
 const app = new Vue({
     el: '#app',
+    data () {
+        return {
+          toggle: false
+        }
+    },
 });
 
 require('./bootstrap');

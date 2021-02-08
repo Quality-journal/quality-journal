@@ -8,17 +8,36 @@
                 @include('components.browse-issues-side-menu')
 
                 <div class="w-full sm:w-3/4 px-8">
-                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-dark">{{ $article->title }}</h1><hr>
+                    <h1 class="text-2xl font-semibold mt-1 pb-4 text-orange">{{ $article->title }}</h1><hr>
 
-                    <h3>Authors:</h3><hr>
+                    <h2 class="text-xl font-semibold my-2 mb-2">Paper's information</h2><hr>
+                    <div class="ck-content mt-4 mb-5">
+                        {!! $article->content !!}
+                    </div>
 
-                    <h3>Paper's information</h3><hr>
+                    <h2 class="text-xl font-semibold my-2 mb-2">Authors</h2><hr>
+                    <div class="ck-content mt-4 mb-5">
+                        {!! $article->authors !!}
+                    </div>
 
-                    <h3>Abstract</h3><hr>
+                    <h2 class="text-lg font-semibold my-2 mb-2">Abstract</h2><hr>
+                    <div class="ck-content mt-4 mb-5">
+                        {!! $article->abstract !!}
+                    </div>
 
-                    <h3>Reviews</h3><hr>
+                    <h2 class="text-xl font-semibold my-2 mb-2">References</h2><hr>
+                    <div class="ck-content mt-4 mb-5">
+                        {!! $article->reference !!}
+                    </div>
 
-                    <h3>How to cite this paper, downloads, views, pdf block</h3><hr>
+                    <hr>
+
+                    <div class="mt-8">
+                        <span @click='toggle = !toggle' class="bg-gray-200 px-4 py-4 cursor-pointer">How to cite this paper <i class="fas fa-chevron-down ml-2"></i></span>
+                        <div v-show='toggle' class="bg-gray-200 px-4 py-4">
+                            <p>Info about how to cite this paper</p>
+                        </div>
+                    </div>
 
                 </div>
              </div>

@@ -8,7 +8,7 @@
                 @include('components.browse-issues-side-menu')
 
                 <div class="w-full sm:w-3/4 px-8">
-                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-dark">{{ $title }}</h1><hr>
+                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-yellow-500">{{ $title }}</h1><hr>
 
                     @foreach($selections as $selection)
                         <div class="flex flex-wrap -m-4 text-center mt-2">

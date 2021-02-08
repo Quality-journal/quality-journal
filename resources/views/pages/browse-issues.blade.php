@@ -10,8 +10,8 @@
                 <div class="w-full sm:w-3/4 px-8">
                     <h1 class="text-2xl font-semibold mt-2 pb-4 text-orange">{{ $title }}</h1><hr>
 
-                    @foreach($selections as $selection)
-                        <div class="flex flex-wrap -m-4 text-center mt-2">
+                    <div class="flex flex-wrap -m-4 text-center mt-2">
+                        @foreach($selections as $selection)
                             <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
                                 <div class="bg-gray-200 px-4 py-6">
                                     <h3 class="title-font font-semibold text-3xl text-gray-900">
@@ -19,8 +19,8 @@
                                     </h3>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
                 </div>
              </div>
         </div>

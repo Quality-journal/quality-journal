@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\App;
 class FrontController extends Controller
 {
     public function index() {
-        return view('welcome');
+        $page = Page::where('title', 'Home')->firstOrFail();
+        return view('welcome', ['page' => $page]);
     }
 
     public function contact() {

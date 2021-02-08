@@ -13,9 +13,10 @@ const app = new Vue({
     el: '#app',
     data () {
         return {
-          toggle: false
+          toggle: false,
+          toggleIssues: false
         }
-    },
+    }
 });
 
 require('./bootstrap');

@@ -36,7 +36,7 @@ class SelectionController extends Controller
     public function store(Request $request)
     {
         Selection::create($request->all());
-        return back()->with(['message'=>'Selection created!']);
+        return redirect('/selections')->with(['message'=>'Selection created!']);
     }
 
     /**
@@ -71,7 +71,7 @@ class SelectionController extends Controller
     public function update(Request $request, Selection $selection)
     {
         $selection->update($request->all());
-        return redirect('selections')->with(['message'=>'Selection edited!']);
+        return redirect('/selections')->with(['message'=>'Selection edited!']);
     }
 
     /**
@@ -83,5 +83,6 @@ class SelectionController extends Controller
     public function destroy(Selection $selection)
     {
         $selection->delete();
+        return redirect('/selections')->with(['message'=>'Selection deleted!']);
     }
 }

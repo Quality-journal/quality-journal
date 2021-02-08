@@ -2,7 +2,7 @@
 
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 min-h-screen mb-6" >  
         <div class="text-black bg-white flex items-center justify-center mt-5 "> 
-            <form id="form" action="{{route('searching')}}">
+            <form id="form" action="{{route('searching')}}" autocomplete="off">
                 <div class="border rounded overflow-hidden flex">
         
                 <input id="input" type="text" name="search" class="px-4 py-2 border rounded" placeholder="Search...">

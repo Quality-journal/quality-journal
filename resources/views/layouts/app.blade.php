@@ -37,7 +37,7 @@
 
         @include('components.side-menu')
 
-        <div class="w-full flex flex-col h-screen overflow-y-hidden">
+        <div class="w-full flex flex-col min-h-screen overflow-y-hidden">
 
             @include('components.headers')
 

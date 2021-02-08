@@ -11,10 +11,10 @@
                     <h1 class="text-2xl font-semibold mt-2 pb-4 text-orange">{{ $currentSelection->title }}</h1><hr>
 
                     <div class="flex flex-wrap -m-4 mt-2">
-                        @foreach($issues as $issue)
+                        @foreach($selectedIssues as $issue)
                             <div class="px-4 w-full">
                                 <div class="py-2 text-left flex border-b">
-                                    <img class="h-20" src="{{ asset('images/'.$issue->image) }}" alt="{{ $issue->title }}">
+                                    <img class="h-20" src="{{ asset('/storage/images/'.$issue->image) }}" alt="{{ $issue->title }}">
                                     <h3 class="px-4 pt-6 title-font font-medium text-xl text-gray-900">
                                         <a class="hover:text-orange" href="/issue/{{ $issue->slug }}"> {{ $issue->title }} </a>
                                     </h3>

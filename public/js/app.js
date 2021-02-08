@@ -4249,7 +4249,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: '#app',
   data: function data() {
     return {
-      toggle: false
+      toggle: false,
+      toggleIssues: false
     };
   }
 });

@@ -6,7 +6,7 @@
     </x-slot>
     <div class="flex justify-between m-5">
             <p class="text-xl pb-4">
-                <i class="fas fa-edit mr-2"></i> Edit issue 
+                <i class="fas fa-edit mr-2"></i> Izmeni izdanje "{{ $issue->title }}"
             </p>
             <span  class="pb-4">
                 <a href="{{ route('selections.index') }}" class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"><i class="fas fa-arrow-left"></i>  Nazad</a>
@@ -53,9 +53,11 @@
     </div>
 
     <div class="mt-5">
-      <label class="block text-sm text-gray-600" for="image">Image</label>
-      <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="image" name="image" type="file"  placeholder="" aria-label="image">
-      <span class="font-italic text-xs md:text-sm mx-2" id="old_document">{{ $issue->image }}</span>
+      <label class="block text-sm text-gray-600" for="image">Current image</label>
+      <img class="h-28 mt-2 mb-4" src="{{ asset('/storage/images/'.$issue->image) }}">
+
+      <label class="block text-sm text-gray-600" for="image">New image</label>
+      <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="image" name="image" type="file" aria-label="image" accept="image">
     </div>
 
     <div class="mt-5">

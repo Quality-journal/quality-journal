@@ -32,12 +32,7 @@
 data() {
    return {
        slides: [
-      {
-        img:
-          "/images/img1.jpg",
-        title: "Types of Gears",
-        mark: "How It Works"
-      },
+      
       {
         img:
           "/images/img2.jpg",

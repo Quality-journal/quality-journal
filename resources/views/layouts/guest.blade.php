@@ -45,9 +45,22 @@
     </head>
     <body>
         <div id="app" class="font-sans text-gray-900 antialiased min-h-screen">
+       
 
             <navigation-component></navigation-component>
-
+            @if(Session::has('message'))
+            <div class="message flex justify-center items-center my-4 font-medium py-3 px-2 bg-white rounded-md text-green-700 bg-green-100 border border-green-300 ">
+                <div class="ml-2">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class="font-normal max-w-full flex-initial pl-2">
+                    {{ session('message') }}
+                </div>
+                <div class="flex flex-auto flex-row-reverse mr-4">
+                    <span class="close-message cursor-pointer pt-1"><i class="fas fa-times"></i></span>
+                </div>
+            </div>
+        @endif
             {{ $slot }}
 
             <footer-component></footer-component>

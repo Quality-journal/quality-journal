@@ -42,10 +42,10 @@ class IssueController extends Controller
         $issue=Issue::create($request->except(['image']));
         $ext=$request->file('image')->getClientOriginalExtension();
         $filename = Str::snake($request->title).".".$ext;
-        Storage::putFileAs("public/images", $request->image, $filename);
+        $originalImage = $request->file('image');
+        Storage::disk('pub')->putFileAs('/images/',$originalImage,$filename);
         $issue->image = $filename;
-      //  $path = $request->file('image')->store('public/images');
-      //  $issue->image=$path;
+      
         $issue->save();
         return redirect('/selections')->with(['message'=>'Issue created!']);
     }
@@ -81,7 +81,7 @@ class IssueController extends Controller
      */
     public function update(Request $request, Issue $issue)
     {
-        $issue->update($request->all());
+        $issue->update($request->except(['image']));
         return redirect('/selections')->with(['message'=>'Issue edited!']);
     }
 

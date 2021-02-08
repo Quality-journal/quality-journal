@@ -17,7 +17,7 @@
            
            @if(isset($results))
            @forelse($results as $res)
-           <div class="w-full sm:w-3/4 px-8 mt-3 border-2 mx-auto text-center border-solid border-gray-300 hover:border-yellow-700">
+           <div class="w-full sm:w-3/4 px-8 mt-3 border-2 mx-auto text-center border-solid border-gray-300 hover:border-yellow-700 hover:text-yellow-700">
                  <a href="{{$res->url()}}"> <h1 class="text-2xl font-semibold mt-2 pb-4 text-dark">{{ $res->title }}</h1><hr></a>
 
                   <h3>Type : {{  explode('\\', get_class($res))[2] }}</h3><hr>

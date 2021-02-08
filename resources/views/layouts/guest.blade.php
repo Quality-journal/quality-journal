@@ -44,7 +44,7 @@
         </style>
     </head>
     <body>
-        <div id="app" class="font-sans text-gray-900 antialiased">
+        <div id="app" class="font-sans text-gray-900 antialiased min-h-screen">
 
             <navigation-component></navigation-component>
 

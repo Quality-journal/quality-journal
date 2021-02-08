@@ -17,12 +17,12 @@
            
            @if(isset($results))
            @forelse($results as $res)
-           <div class="w-full sm:w-3/4 px-8 mt-3 border-1 mx-auto text-center">
-                 <a href="{{explode('\\', get_class($res))[2]=='Article'?'/article/'.$res->slug :'/'.$res->slug}}"> <h1 class="text-2xl font-semibold mt-2 pb-4 text-dark">{{ $res->title }}</h1></a><hr>
+           <div class="w-full sm:w-3/4 px-8 mt-3 border-2 mx-auto text-center border-solid border-gray-300 hover:border-yellow-700">
+                 <a href="{{$res->url()}}"> <h1 class="text-2xl font-semibold mt-2 pb-4 text-dark">{{ $res->title }}</h1><hr></a>
 
-                  <h3>Type:{{  explode('\\', get_class($res))[2]=='Article'?'Article':'Page'}}</h3><hr>
+                  <h3>Type : {{  explode('\\', get_class($res))[2] }}</h3><hr>
 
-                  <h3>Title:{{$res->title}}</h3><hr>
+                  <h3 class="mb-3">Title : {{$res->title}}</h3>
 
                  
 

@@ -16,4 +16,8 @@ class Article extends Model
     {
         return $this->belongsTo(Issue::class);
     }
+
+    public function url(){
+        return '/article/'.$this->slug;
+    }
 }

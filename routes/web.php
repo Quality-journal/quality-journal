@@ -35,6 +35,7 @@ Route::get('/browse-issues', [BrowseIssuesController::class, 'index'])->name('br
 Route::get('/selection/{selection}', [BrowseIssuesController::class, 'issues'])->name('issues');
 Route::get('/issue/{issue}', [BrowseIssuesController::class, 'articles'])->name('articles');
 Route::get('/article/{article}', [BrowseIssuesController::class, 'article'])->name('article');
+Route::get('/search/searching', [SearchController::class, 'searching'])->name('searching');
 
 
 Route::middleware(['auth'])->group(function () {

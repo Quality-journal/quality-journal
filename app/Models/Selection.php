@@ -16,4 +16,6 @@ class Selection extends Model
     {
         return $this->hasMany(Issue::class);
     }
+
+
 }

@@ -107,7 +107,7 @@ class ArticlesController extends Controller
             $article->save();
             $request->session()->flash('message', 'Članak je uspešno izmenjen');
         } catch(\Exception $e){
-            dd($e);
+            
             $request->session()->flash('message', 'Došlo je do greške. Pokušajte ponovo.');
         }
 

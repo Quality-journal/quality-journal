@@ -24,5 +24,6 @@ class Issue extends Model
 
     public function url(){
         return '/issue/'.$this->slug;
+        
     }
 }

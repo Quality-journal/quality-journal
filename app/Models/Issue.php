@@ -23,6 +23,6 @@ class Issue extends Model
     }
 
     public function url(){
-        return '/issue/'.$this->slug;
+        return '/issue/'.$this->selection->slug.'/'.$this->slug;
     }
 }

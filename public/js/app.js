@@ -3917,7 +3917,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      names: ' ',
+      email: ' ',
+      message: ' '
+    };
+  },
+  methods: {
+    submitForm: function submitForm(event) {// alert( event.target);
+      // event.target.submit();
+    }
+  }
+});
 
 /***/ }),
 
@@ -4144,10 +4158,6 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       slides: [{
-        img: "/images/img1.jpg",
-        title: "Types of Gears",
-        mark: "How It Works"
-      }, {
         img: "/images/img2.jpg",
         title: "Guide to CNC Machining Tolerances",
         mark: "Monitoring & Safety"
@@ -4381,7 +4391,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.slider[data-v-872262e8] {\n  position: relative;\n  z-index: 1;\n  overflow: hidden;\n  height: 70vh;\n}\n.slider ul[data-v-872262e8] {\n  list-style: none;\n}\n.slider ul.slides[data-v-872262e8] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  transition: top 800ms;\n}\n.slider ul.slides li[data-v-872262e8] {\n  height: 100%;\n}\n.slider ul.slides li .img[data-v-872262e8] {\n  height: 100%;\n  background-size: cover;\n  background-position: 50%;\n}\n.slider ul.indicators[data-v-872262e8] {\n  position: absolute;\n  padding-right: 40px;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n  z-index: 2;\n  text-align: right;\n}\n.slider ul.indicators li[data-v-872262e8] {\n  clear: both;\n}\n.slider ul.indicators li .item[data-v-872262e8] {\n  position: relative;\n  margin-bottom: 16px;\n  float: right;\n}\n.slider ul.indicators li:last-child .item[data-v-872262e8] {\n  margin-bottom: 0;\n}\n.slider ul.indicators li .title[data-v-872262e8] {\n  color: #fff;\n  cursor: pointer;\n  font-size: 16px;\n  font-family: 'Poppins';\n  transition: font-size 0.6s ease-out;\n}\n.slider ul.indicators li .mark[data-v-872262e8] {\n  color: #fff;\n  font-family: 'Poppins';\n}\n.slider ul.indicators li .dot[data-v-872262e8] {\n  position: absolute;\n  top: 50%;\n  right: -20px;\n  margin-top: -5.5px;\n  margin-left: 10px;\n  width: 11px;\n  height: 11px;\n  background: #fff;\n  border-radius: 50%;\n}\n.slider ul.indicators li .progress[data-v-872262e8] {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 2px;\n  margin: 8px 0;\n  background: rgba(255,255,255,0.5);\n}\n.slider ul.indicators li.active .title[data-v-872262e8] {\n  transition: font-size 0.6s ease-in;\n  font-size: 36px;\n  font-family: 'Poppins';\n}\n.slider ul.indicators li.active .progress .fill[data-v-872262e8] {\n  height: 100%;\n  background: #fff;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.slider[data-v-872262e8] {\r\n  position: relative;\r\n  z-index: 1;\r\n  overflow: hidden;\r\n  height: 70vh;\n}\n.slider ul[data-v-872262e8] {\r\n  list-style: none;\n}\n.slider ul.slides[data-v-872262e8] {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n  transition: top 800ms;\n}\n.slider ul.slides li[data-v-872262e8] {\r\n  height: 100%;\n}\n.slider ul.slides li .img[data-v-872262e8] {\r\n  height: 100%;\r\n  background-size: cover;\r\n  background-position: 50%;\n}\n.slider ul.indicators[data-v-872262e8] {\r\n  position: absolute;\r\n  padding-right: 40px;\r\n  right: 0;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n  z-index: 2;\r\n  text-align: right;\n}\n.slider ul.indicators li[data-v-872262e8] {\r\n  clear: both;\n}\n.slider ul.indicators li .item[data-v-872262e8] {\r\n  position: relative;\r\n  margin-bottom: 16px;\r\n  float: right;\n}\n.slider ul.indicators li:last-child .item[data-v-872262e8] {\r\n  margin-bottom: 0;\n}\n.slider ul.indicators li .title[data-v-872262e8] {\r\n  color: #fff;\r\n  cursor: pointer;\r\n  font-size: 16px;\r\n  font-family: 'Poppins';\r\n  transition: font-size 0.6s ease-out;\n}\n.slider ul.indicators li .mark[data-v-872262e8] {\r\n  color: #fff;\r\n  font-family: 'Poppins';\n}\n.slider ul.indicators li .dot[data-v-872262e8] {\r\n  position: absolute;\r\n  top: 50%;\r\n  right: -20px;\r\n  margin-top: -5.5px;\r\n  margin-left: 10px;\r\n  width: 11px;\r\n  height: 11px;\r\n  background: #fff;\r\n  border-radius: 50%;\n}\n.slider ul.indicators li .progress[data-v-872262e8] {\r\n  position: relative;\r\n  display: inline-block;\r\n  width: 100%;\r\n  height: 2px;\r\n  margin: 8px 0;\r\n  background: rgba(255,255,255,0.5);\n}\n.slider ul.indicators li.active .title[data-v-872262e8] {\r\n  transition: font-size 0.6s ease-in;\r\n  font-size: 36px;\r\n  font-family: 'Poppins';\n}\n.slider ul.indicators li.active .progress .fill[data-v-872262e8] {\r\n  height: 100%;\r\n  background: #fff;\n}\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23017,89 +23027,145 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("form", { attrs: { action: "/sendmail", method: "get" } }, [
+      _c("div", { staticClass: "shadow overflow-hidden" }, [
+        _c("div", { staticClass: "px-4 py-5 sm:p-6 formdiv" }, [
+          _c("div", { staticClass: "grid grid-cols-6 gap-6" }, [
+            _c("div", { staticClass: "col-span-12" }, [
+              _c(
+                "label",
+                {
+                  staticClass: "leading-7 text-sm text-gray-600",
+                  attrs: { for: "name" }
+                },
+                [_vm._v("Name")]
+              ),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.names,
+                    expression: "names"
+                  }
+                ],
+                staticClass:
+                  "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out",
+                attrs: { type: "text", id: "name", name: "name", required: "" },
+                domProps: { value: _vm.names },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.names = $event.target.value
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-span-12" }, [
+              _c(
+                "label",
+                {
+                  staticClass: "leading-7 text-sm text-gray-600",
+                  attrs: { for: "name" }
+                },
+                [_vm._v("Email address")]
+              ),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.email,
+                    expression: "email"
+                  }
+                ],
+                staticClass:
+                  "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out",
+                attrs: {
+                  type: "email",
+                  id: "email",
+                  name: "email",
+                  required: ""
+                },
+                domProps: { value: _vm.email },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.email = $event.target.value
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-span-12" }, [
+              _c(
+                "label",
+                {
+                  staticClass: "leading-7 text-sm text-gray-600",
+                  attrs: { for: "name" }
+                },
+                [_vm._v("Message")]
+              ),
+              _vm._v(" "),
+              _c("textarea", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.message,
+                    expression: "message"
+                  }
+                ],
+                staticClass:
+                  "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out",
+                attrs: { id: "message", name: "message", required: "" },
+                domProps: { value: _vm.message },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.message = $event.target.value
+                  }
+                }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(0)
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("form", { attrs: { action: "#", method: "POST" } }, [
-        _c("div", { staticClass: "shadow overflow-hidden" }, [
-          _c("div", { staticClass: "px-4 py-5 sm:p-6 formdiv" }, [
-            _c("div", { staticClass: "grid grid-cols-6 gap-6" }, [
-              _c("div", { staticClass: "col-span-12" }, [
-                _c(
-                  "label",
-                  {
-                    staticClass: "leading-7 text-sm text-gray-600",
-                    attrs: { for: "name" }
-                  },
-                  [_vm._v("Name")]
-                ),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass:
-                    "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out",
-                  attrs: { type: "text", id: "name", name: "name" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-span-12" }, [
-                _c(
-                  "label",
-                  {
-                    staticClass: "leading-7 text-sm text-gray-600",
-                    attrs: { for: "name" }
-                  },
-                  [_vm._v("Email address")]
-                ),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass:
-                    "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out",
-                  attrs: { type: "email", id: "email", name: "email" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-span-12" }, [
-                _c(
-                  "label",
-                  {
-                    staticClass: "leading-7 text-sm text-gray-600",
-                    attrs: { for: "name" }
-                  },
-                  [_vm._v("Message")]
-                ),
-                _vm._v(" "),
-                _c("textarea", {
-                  staticClass:
-                    "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out",
-                  attrs: { id: "message", name: "message" }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "px-4 py-3 bg-gray-50 text-right sm:px-6 formdiv" },
-            [
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg",
-                  attrs: { type: "submit" }
-                },
-                [_vm._v("Send")]
-              )
-            ]
-          )
-        ])
-      ])
-    ])
+    return _c(
+      "div",
+      { staticClass: "px-4 py-3 bg-gray-50 text-right sm:px-6 formdiv" },
+      [
+        _c(
+          "button",
+          {
+            staticClass:
+              "text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg",
+            attrs: { type: "submit" }
+          },
+          [_vm._v("Send")]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true

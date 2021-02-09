@@ -15,7 +15,7 @@
 
                     <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
                         <div class="bg-white px-4 py-6 rounded-lg">
-                          
+                         
                         </div>
                     </div>
 

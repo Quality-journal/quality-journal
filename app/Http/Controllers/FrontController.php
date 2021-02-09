@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Page;
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Mail;
 
 class FrontController extends Controller
 {
@@ -50,6 +52,13 @@ class FrontController extends Controller
     public function ethicsAndPolicy() {
         $page=Page::where('title','ethics and policy')->firstOrFail();
         return view('pages.about',['page'=>$page,'title'=>'Ethics and policy']);
+    }
+
+    public function sendmail(Request $request) {
+
+        Mail::to('aleksandarmarkovic127@gmail.com')->send(new ContactMail($request->name,$request->email,$request->message));
+        return back()->with(['message'=>'Message sent!']);
+
     }
 
 

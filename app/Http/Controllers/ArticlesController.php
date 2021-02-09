@@ -45,7 +45,8 @@ class ArticlesController extends Controller
 
         try{
             $filename = Str::snake($request->title).".pdf";
-            Storage::putFileAs("public/articles", $request->file, $filename);
+           // Storage::putFileAs("public/articles", $request->file, $filename);
+            Storage::disk('pub')->putFileAs('/articles_pdf/',$request->file,$filename);
             $article->pdf = $filename;
             $article->slug = Str::slug($article->title);
             $article->save();
@@ -56,6 +57,9 @@ class ArticlesController extends Controller
 
         return redirect('/articles?issue_id='.$article->issue_id);
     }
+    
+    
+    
 
     /**
      * Display the specified resource.

@@ -27,7 +27,7 @@
                 <table class="min-w-full border-collapse">
                     <thead class="bg-gray-800 text-white">
                         <tr>
-                            <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Stranica</th>
+                            <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Stranice</th>
                             <th class="w-1/3 text-right py-3 px-4 uppercase font-semibold text-sm">Opcije</th>
                         </tr>
                     </thead>

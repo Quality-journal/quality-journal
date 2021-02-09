@@ -1,10 +1,16 @@
 <x-app-layout>
+
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ 'Edit page' }}
+            {{ 'Izmena izdanja' }}
         </h2>
     </x-slot>
-    <div class="flex justify-between m-5">
+
+    <x-slot name="title">{{ 'Izmena izdanja' }}</x-slot>
+
+    <main class="w-full flex-grow p-6">
+
+        <div class="flex justify-between mb-2">
             <p class="text-xl pb-4">
                 <i class="fas fa-edit mr-2"></i> Izmeni izdanje "{{ $issue->title }}"
             </p>
@@ -12,68 +18,70 @@
                 <a href="{{ route('selections.index') }}" class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"><i class="fas fa-arrow-left"></i>  Nazad</a>
             </span>
         </div>
-<div class="leading-loose">
-  <form class="m-4 p-10 bg-white rounded shadow-xl" method='POST' action="{{route('issues.update',['issue'=>$issue->id])}}" enctype='multipart/form-data'>
-      @csrf 
-      @method('PUT')
-    
-    <div class="mt-10" >
-      <label class="block text-sm text-gray-00" for="title">Title</label>
-      <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="title" name="title" type="text" required="" placeholder="" aria-label="title" value="{{$issue->title}}">
-    </div>
-   
-    <div class="mt-5">
-      <label class="block text-sm text-gray-600" for="slug">Slug</label>
-      <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="slug" name="slug" type="text" required="" placeholder="" aria-label="slug" value="{{$issue->slug}}">
-    </div>
 
-    <div class="mt-5">
-      <label class="block text-sm text-gray-600" for="description">Description</label>
-      <textarea class=" editor w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="description" name="description" type="text" required="" placeholder="" aria-label="description" >{!!$issue->description!!}</textarea>
-    </div>
+        <div class="leading-loose">
+            <form class="p-10 bg-white rounded shadow-xl" method='POST' action="{{route('issues.update',['issue'=>$issue->id])}}" enctype='multipart/form-data'>
+                @csrf
+                @method('PUT')
 
-    <div class="mt-5">
-      <label class="block text-sm text-gray-00" for="order">Order</label>
-      <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="order" name="order" type="number" required="" placeholder="" aria-label="order" value="{{$issue->order}}">
-    </div>
+                <div class="mt-5" >
+                    <label class="block text-gray-600 mb-1" for="title">Title</label>
+                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="title" name="title" type="text" required="" aria-label="title" value="{{$issue->title}}">
+                </div>
 
-    <div class="mt-5">
-      <label class="block text-sm text-gray-600" for="info">Info</label>
-      <textarea class="editor w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="info" name="info" type="text" required="" placeholder="" aria-label="info" >{!!$issue->info!!}</textarea>
-    </div>
+                <div class="mt-5">
+                    <label class="block text-gray-600 mb-1" for="slug">Slug</label>
+                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="slug" name="slug" type="text" required="" aria-label="slug" value="{{$issue->slug}}">
+                </div>
 
-    <div class="mt-5">
-      <label class="block text-sm text-gray-600" for="keywords">Keywords</label>
-      <textarea class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="keywords" name="keywords" type="text" required="" placeholder="" aria-label="keywords" >{!!$issue->keywords!!}</textarea>
-    </div>
+                <div class="mt-5">
+                    <label class="block text-gray-600 mb-1" for="description">Description</label>
+                    <textarea class=" editor w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="description" name="description" type="text" required="" aria-label="description" >{!!$issue->description!!}</textarea>
+                </div>
 
-    <div class="mt-5">
-      <label class="block text-sm text-gray-600" for="content">Content</label>
-      <textarea class="editor w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="content" name="content" type="text" required="" placeholder="" aria-label="content" >{!!$issue->content!!}</textarea>
-    </div>
+                <div class="mt-5">
+                    <label class="block text-gray-600 mb-1" for="order">Order</label>
+                    <input class="w-full sm:w-1/5 px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="order" name="order" type="number" required="" min="1" aria-label="order" value="{{$issue->order}}">
+                </div>
 
-    <div class="mt-5">
-      <label class="block text-sm text-gray-600" for="image">Current image</label>
-      <img class="h-28 mt-2 mb-4" src="{{ asset('/storage/images/'.$issue->image) }}">
+                <div class="mt-5">
+                    <label class="block text-gray-600 mb-1" for="info">Info</label>
+                    <textarea class="editor w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="info" name="info" type="text" required="" aria-label="info" >{!!$issue->info!!}</textarea>
+                </div>
 
-      <label class="block text-sm text-gray-600" for="image">New image</label>
-      <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="image" name="image" type="file" aria-label="image" accept="image">
-    </div>
+                <div class="mt-5">
+                    <label class="block text-gray-600 mb-1" for="keywords">Keywords</label>
+                    <textarea class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="keywords" name="keywords" type="text" required="" aria-label="keywords" >{!!$issue->keywords!!}</textarea>
+                </div>
 
-    <div class="mt-5">
-      <label class="block text-sm text-gray-600" for="date">Date</label>
-      <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="date" name="date" type="date" required="" placeholder="" aria-label="date" value="{{$issue->date}}">
-    </div>
-    <input type="hidden" value="{{$issue->selection_id}}" name="selection_id">
-    
-   
-    <div class="mt-5">
-      <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded" type="submit">Edit</button>
-    </div>
-  </form>
-</div>
+                <div class="mt-5">
+                    <label class="block text-gray-600 mb-1" for="content">Content</label>
+                    <textarea class="editor w-full px-5 py-2 text-gray-700 bg-gray-200 rounded" id="content" name="content" type="text" required="" aria-label="content" >{!!$issue->content!!}</textarea>
+                </div>
 
+                <div class="mt-5">
+                    <label class="block text-gray-600 mb-1" for="image">Current image</label>
+                    <img class="h-28 mt-2 mb-4" src="{{ asset('/images/'.$issue->image) }}">
 
-@include('components.ckeditor')
+                    <label class="block text-gray-600 mb-1" for="image">New image</label>
+                    <input class="w-full sm:w-1/4 px-5 py-2 text-gray-700 bg-gray-200 rounded" id="image" name="image" type="file" aria-label="image" accept="image">
+                </div>
+
+                <div class="mt-5">
+                    <label class="block text-gray-600 mb-1" for="date">Date</label>
+                    <input class="w-full sm:w-1/4 px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="date" name="date" type="date" required="" aria-label="date" value="{{$issue->date}}">
+                </div>
+
+                <input type="hidden" value="{{$issue->selection_id}}" name="selection_id">
+
+                <div class="mt-5">
+                    <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded" type="submit">Edit</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    @include('components.ckeditor')
 
 </x-app-layout>

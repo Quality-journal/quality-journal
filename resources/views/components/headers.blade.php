@@ -34,10 +34,10 @@
     <!-- Dropdown Nav -->
     <nav :class="isOpen ? 'flex': 'hidden'" class="flex flex-col pt-4">
 
-        <a href="{{ route('dashboard') }}" class="flex items-center @if(Route::is('dashboard')) active-nav-link @endif text-white py-2 pl-4 nav-item">
+        <!-- <a href="{{ route('dashboard') }}" class="flex items-center @if(Route::is('dashboard')) active-nav-link @endif text-white py-2 pl-4 nav-item">
             <i class="fas fa-tachometer-alt mr-3"></i>
             Dashboard
-        </a>
+        </a> -->
 
         <a href="{{ route('pages.index') }}" class=" @if(Route::is('pages.*')) active-nav-link @endif flex items-center text-white py-2 pl-4 nav-item">
             <i class="fas fa-sticky-note mr-3"></i>

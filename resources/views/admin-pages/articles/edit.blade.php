@@ -5,9 +5,11 @@
         </h2>
     </x-slot>
 
+    <x-slot name="title">{{ 'Izmena članka' }}</x-slot>
+
     <main class="w-full flex-grow p-6">
 
-        <div class="flex justify-between">
+        <div class="flex justify-between mb-2">
             <p class="text-xl pb-4">
                 <i class="fas fa-edit mr-2"></i> Izmena članka "{{ $article->title }}"
             </p>
@@ -68,7 +70,7 @@
                             </label>
                         </div>
                         <div class="w-full sm:w-1/6 ml-20 mt-10">
-                            <span class="font-italic text-xs md:text-sm mx-2 text-blue-500 hover:text-blue-600"><a href="/storage/articles/{{ $article->pdf }}" target="_blank">{{ $article->title }}</a></span>
+                            <span class="font-italic text-xs md:text-sm mx-2 text-blue-500 hover:text-blue-600"><a href="/articles_pdf/{{ $article->pdf }}" target="_blank">{{ $article->title }}</a></span>
                         </div>
                     </div>
 

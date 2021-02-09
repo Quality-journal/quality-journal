@@ -17,7 +17,7 @@ class BrowseIssuesController extends Controller
 
     public function issues() {
         $slug = last(request()->segments());
-        $selection = Selection::where('slug', $slug)->get()->first();
+        $selection = Selection::where('slug', $slug)->firstOrFail();
         $selectedIssues = Issue::where('selection_id', $selection->id)->get();
         $selections = Selection::all();
         $issues = Issue::all();
@@ -26,7 +26,9 @@ class BrowseIssuesController extends Controller
 
     public function articles() {
         $slug = last(request()->segments());
-        $issue = Issue::where('slug', $slug)->get()->first();
+        $selectionSlug = request()->segments()[1];
+        $issueSelection = Selection::where('slug', $selectionSlug)->firstOrFail();
+        $issue = Issue::where('slug', $slug)->where('selection_id', $issueSelection->id)->firstOrFail();
         $articles = Article::where('issue_id', $issue->id)->get();
         $selections = Selection::all();
         $issues = Issue::all();
@@ -35,7 +37,7 @@ class BrowseIssuesController extends Controller
 
     public function article() {
         $slug = last(request()->segments());
-        $article = Article::where('slug', $slug)->get()->first();
+        $article = Article::where('slug', $slug)->firstOrFail();
         $selections = Selection::all();
         $issues = Issue::all();
         return view('pages.article', ['article' => $article, 'issues' => $issues, 'selections' => $selections]);

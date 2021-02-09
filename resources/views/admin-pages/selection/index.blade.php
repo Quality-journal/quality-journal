@@ -1,9 +1,11 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Selekcije') }}
+            {{ 'Selekcije izdanja' }}
         </h2>
     </x-slot>
+
+    <x-slot name="title">{{ 'Selekcije izdanja' }}</x-slot>
 
     <main class="w-full flex-grow p-6 min-h-screen">
         <h1 class="text-3xl text-black pb-6">Selekcije izdanja</h1>

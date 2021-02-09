@@ -33,7 +33,7 @@ Route::get('/ethics-and-policy', [FrontController::class, 'ethicsAndPolicy'])->n
 Route::get('/search', [SearchController::class, 'index'])->name('search');
 Route::get('/browse-issues', [BrowseIssuesController::class, 'index'])->name('browseIssues');
 Route::get('/selection/{selection}', [BrowseIssuesController::class, 'issues'])->name('selection');
-Route::get('/issue/{issue}', [BrowseIssuesController::class, 'articles'])->name('issue');
+Route::get('/issue/{selection}/{issue}', [BrowseIssuesController::class, 'articles'])->name('issue');
 Route::get('/article/{article}', [BrowseIssuesController::class, 'article'])->name('article');
 Route::get('/search/searching', [SearchController::class, 'searching'])->name('searching');
 Route::get('/sendmail', [FrontController::class, 'sendmail'])->name('sendmail');

@@ -1,5 +1,9 @@
 <x-guest-layout>
 
+    <x-slot name="title">Journal of Quality Engineering</x-slot>
+    <x-slot name="description">{{ $page->description }}</x-slot>
+    <x-slot name="keywords">{{ $page->keywords }}</x-slot>
+
     <slider-component></slider-component>
 
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -17,6 +21,5 @@
             </div>
         </div>
     </div>
-
 
 </x-guest-layout>

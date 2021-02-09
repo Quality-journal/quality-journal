@@ -1,5 +1,9 @@
 <x-guest-layout>
 
+    <x-slot name="title">{{ $article->title }}</x-slot>
+    <x-slot name="description">{{ $article->description }}</x-slot>
+    <x-slot name="keywords">{{ $article->keywords }}</x-slot>
+
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-5">
 
@@ -48,7 +52,7 @@
 
                         <div class="w-full sm:w-2/3 float-right mt-3">
                             <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mr-10 mb-10 flex-shrink-0 cursor-pointer">
-                                <div class="font-bold text-center"><a href="{{ asset('/storage/articles/'.$article->pdf) }}" target="_blank"><i class="fas fa-download"></i><br>PDF</a></div>
+                                <div class="font-bold text-center"><a href="{{ asset('/articles_pdf/'.$article->pdf) }}" target="_blank"><i class="fas fa-download"></i><br>PDF</a></div>
                             </div>
 
                             <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-orange text-white mr-10 mb-10 flex-shrink-0">
@@ -65,7 +69,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
                 </div>

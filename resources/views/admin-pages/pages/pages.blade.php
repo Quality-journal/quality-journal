@@ -1,9 +1,11 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Stranice') }}
+            {{ 'Stranice' }}
         </h2>
     </x-slot>
+
+    <x-slot name="title">{{ 'Stranice' }}</x-slot>
 
     <main class="w-full flex-grow p-6 min-h-screen">
         <h1 class="text-3xl text-black pb-4">Stranice</h1>
@@ -21,7 +23,7 @@
                 </div>
             </div>
         @endif
-        
+
         <div class="w-full mt-">
             <div class="bg-white overflow-auto">
                 <table class="min-w-full border-collapse">

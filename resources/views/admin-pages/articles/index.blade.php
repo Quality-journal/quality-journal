@@ -5,6 +5,8 @@
         </h2>
     </x-slot>
 
+    <x-slot name="title">{{ 'Članci' }}</x-slot>
+
     <main class="w-full flex-grow p-6">
         <h1 class="text-3xl text-black pb-2">Članci za "{{ $issue->title }}"</h1>
 

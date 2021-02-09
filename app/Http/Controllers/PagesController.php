@@ -73,13 +73,12 @@ class PagesController extends Controller
     public function update(Request $request, $id)
     {
         $page = Page::findOrFail($id);
-        $page->content = $request->content;
 
         try{
-            $page->save();
+            $page->update($request->all());
             $request->session()->flash('message', 'Stranica uspešno izmenjena');
         } catch(\Exception $e){
-            //
+            $request->session()->flash('message', 'Došlo je do greške. Pokušajte ponovo.');
         }
         return redirect('/pages');
 

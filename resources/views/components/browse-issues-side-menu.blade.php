@@ -8,7 +8,7 @@
         <ul class="mt-1 ml-5" id="issues-{{ $selection->id }}" v-show="toggleIssues">
             @foreach($issues as $issue)
                 @if($issue->selection_id == $selection->id)
-                    <li><a href="/issue/{{ $issue->slug }}" class="ml-5 p-2 hover:text-orange">{{ $issue->title }}</a></li>
+                    <li><a href="/issue/{{ $selection->slug }}/{{ $issue->slug }}" class="ml-5 p-2 hover:text-orange">{{ $issue->title }}</a></li>
                 @endif
             @endforeach
         </ul>

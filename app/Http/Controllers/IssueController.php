@@ -25,7 +25,7 @@ class IssueController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {   
+    {
         $id=request()->selection_id;
         return view('admin-pages.issue.create',['selection_id'=>$id]);
     }
@@ -45,7 +45,7 @@ class IssueController extends Controller
         $originalImage = $request->file('image');
         Storage::disk('pub')->putFileAs('/images/',$originalImage,$filename);
         $issue->image = $filename;
-      
+
         $issue->save();
         return redirect('/selections')->with(['message'=>'Issue created!']);
     }
@@ -82,6 +82,17 @@ class IssueController extends Controller
     public function update(Request $request, Issue $issue)
     {
         $issue->update($request->except(['image']));
+
+        if($request->file('image')){
+            $ext=$request->file('image')->getClientOriginalExtension();
+            $filename = Str::snake($request->title).".".$ext;
+            $originalImage = $request->file('image');
+            Storage::disk('pub')->putFileAs('/images/',$originalImage,$filename);
+            $issue->image = $filename;
+
+            $issue->save();
+        }
+
         return redirect('/selections')->with(['message'=>'Issue edited!']);
     }
 

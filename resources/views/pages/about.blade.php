@@ -1,5 +1,9 @@
 <x-guest-layout>
 
+    <x-slot name="title">{{ $page->title }}</x-slot>
+    <x-slot name="description">{{ $page->description }}</x-slot>
+    <x-slot name="keywords">{{ $page->keywords }}</x-slot>
+
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-5">
 

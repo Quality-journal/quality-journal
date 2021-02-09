@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Selection;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class SelectionController extends Controller
 {
@@ -35,7 +36,9 @@ class SelectionController extends Controller
      */
     public function store(Request $request)
     {
-        Selection::create($request->all());
+        $selection = Selection::create($request->all());
+        $selection->slug = Str::slug($selection->title);
+        $selection->save();
         return redirect('/selections')->with(['message'=>'Selection created!']);
     }
 

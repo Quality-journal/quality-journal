@@ -1,5 +1,9 @@
 <x-guest-layout>
 
+    <x-slot name="title">{{ 'Issues' }}</x-slot>
+    <x-slot name="description">{{ 'Issues' }}</x-slot>
+    <x-slot name="keywords">{{ 'issues, journal, of, quality, engineering' }}</x-slot>
+
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-5">
 
@@ -14,9 +18,9 @@
                         @foreach($selectedIssues as $issue)
                             <div class="px-4 w-full">
                                 <div class="py-2 text-left flex border-b">
-                                    <img class="h-20" src="{{ asset('/storage/images/'.$issue->image) }}" alt="{{ $issue->title }}">
+                                    <img class="h-20" src="{{ asset('/images/'.$issue->image) }}" alt="{{ $issue->title }}">
                                     <h3 class="px-4 pt-6 title-font font-medium text-xl text-gray-900">
-                                        <a class="hover:text-orange" href="/issue/{{ $issue->slug }}"> {{ $issue->title }} </a>
+                                        <a class="hover:text-orange" href="/issue/{{ $currentSelection->slug }}/{{ $issue->slug }}"> {{ $issue->title }} </a>
                                     </h3>
                                 </div>
                             </div>

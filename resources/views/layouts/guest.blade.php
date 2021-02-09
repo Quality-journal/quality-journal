@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Quality Journal</title>
+        <meta name="description" content="{{ $description }}">
+        <meta name="keywords" content="{{ $keywords }}">
+
+        <title>{{ $title }}</title>
 
         <!-- Fonts -->
         <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"> -->
@@ -45,7 +48,7 @@
     </head>
     <body>
         <div id="app" class="font-sans text-gray-900 antialiased min-h-screen">
-       
+
 
             <navigation-component></navigation-component>
             @if(Session::has('message'))

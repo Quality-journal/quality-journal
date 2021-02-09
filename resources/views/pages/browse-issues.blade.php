@@ -1,5 +1,9 @@
 <x-guest-layout>
 
+    <x-slot name="title">{{ 'Browse issues' }}</x-slot>
+    <x-slot name="description">{{ 'Browse issues' }}</x-slot>
+    <x-slot name="keywords">{{ 'browse, issues' }}</x-slot>
+
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-5">
 

@@ -1,4 +1,9 @@
 <x-guest-layout>
+
+    <x-slot name="title">{{ 'Login' }}</x-slot>
+    <x-slot name="description">{{ 'Login' }}</x-slot>
+    <x-slot name="keywords">{{ 'login' }}</x-slot>
+
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">

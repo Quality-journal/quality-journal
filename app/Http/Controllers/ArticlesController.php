@@ -102,7 +102,7 @@ class ArticlesController extends Controller
                 $article->pdf = $filename;
             }
 
-            $article->update($request->all());
+            $article->update($request->except(['file']));
             $article->slug = Str::slug($article->title);
             $article->save();
             $request->session()->flash('message', 'Članak je uspešno izmenjen');

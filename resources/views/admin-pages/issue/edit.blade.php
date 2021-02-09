@@ -36,7 +36,7 @@
 
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-1" for="description">Description</label>
-                    <textarea class=" editor w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="description" name="description" type="text" required="" aria-label="description" >{!!$issue->description!!}</textarea>
+                    <textarea class=" editor w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="description" name="description" type="text" aria-label="description" >{!!$issue->description!!}</textarea>
                 </div>
 
                 <div class="mt-5">
@@ -46,17 +46,17 @@
 
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-1" for="info">Info</label>
-                    <textarea class="editor w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="info" name="info" type="text" required="" aria-label="info" >{!!$issue->info!!}</textarea>
+                    <textarea class="editor w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="info" name="info" type="text" aria-label="info" >{!!$issue->info!!}</textarea>
                 </div>
 
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-1" for="keywords">Keywords</label>
-                    <textarea class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="keywords" name="keywords" type="text" required="" aria-label="keywords" >{!!$issue->keywords!!}</textarea>
+                    <textarea class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="keywords" name="keywords" type="text" aria-label="keywords" >{!!$issue->keywords!!}</textarea>
                 </div>
 
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-1" for="content">Content</label>
-                    <textarea class="editor w-full px-5 py-2 text-gray-700 bg-gray-200 rounded" id="content" name="content" type="text" required="" aria-label="content" >{!!$issue->content!!}</textarea>
+                    <textarea class="editor w-full px-5 py-2 text-gray-700 bg-gray-200 rounded" id="content" name="content" type="text" aria-label="content" >{!!$issue->content!!}</textarea>
                 </div>
 
                 <div class="mt-5">

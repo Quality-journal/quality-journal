@@ -50,7 +50,7 @@
 
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-1" for="keywords">Keywords</label>
-                    <textarea class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="keywords" name="keywords" type="text" required="" aria-label="keywords" >{{old('keywords')}}</textarea>
+                    <textarea class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="keywords" name="keywords" type="text" aria-label="keywords" >{{old('keywords')}}</textarea>
                 </div>
 
                 <div class="mt-5">

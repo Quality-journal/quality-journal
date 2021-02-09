@@ -20,7 +20,7 @@ class FrontController extends Controller
     }
 
     public function about() {
-        $page=Page::where('title','about')->firstOrFail();
+        $page=Page::where('slug','about')->firstOrFail();
         return view('pages.about',['page'=>$page,'title'=>'About']);
     }
 

@@ -53,7 +53,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         </style>
     </head>
     <body>
-        <div id="app" class="font-sans text-gray-900 antialiased min-h-screen w-3/4 mx-auto shadow-2xl">
+        <div id="app" class="font-sans text-gray-900 antialiased min-h-screen md:w-3/4 mx-auto shadow-2xl">
 
 
             <navigation-component></navigation-component>

@@ -4,8 +4,8 @@
     <x-slot name="description">{{ 'Search the site, find articles, issues, volumes, journal of quality engineering' }}</x-slot>
     <x-slot name="keywords">{{ 'search, find, articles, issues, volumes' }}</x-slot>
 
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 min-h-screen mb-6" >
-        <div class="text-black bg-white flex items-center justify-center mt-5 ">
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 min-h-screen pb-6 bg-white" >
+        <div class="text-black bg-white flex items-center justify-center pt-5 ">
             <form id="form" action="{{route('searching')}}" autocomplete="off">
                 <div class="border rounded overflow-hidden flex">
 

@@ -22831,37 +22831,41 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-5"
-        },
-        [
-          _c("h1", { staticClass: "text-2xl font-semibold mt-2 pb-4 p-2" }, [
-            _vm._v("About the journal")
-          ]),
-          _c("hr"),
-          _vm._v(" "),
-          _c("div", { staticClass: "flex flex-wrap py-4" }, [
-            _c(
-              "div",
-              { staticClass: "w-full sm:w-1/4 px-4 bg-gray-200 py-2" },
-              [_c("p", {}, [_vm._v("Blok levo")])]
-            ),
+    return _c(
+      "div",
+      { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 bg-white" },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-5"
+          },
+          [
+            _c("h1", { staticClass: "text-2xl font-semibold mt-2 pb-4 p-2" }, [
+              _vm._v("About the journal")
+            ]),
+            _c("hr"),
             _vm._v(" "),
-            _c("div", { staticClass: "w-full sm:w-3/4 px-8" }, [
-              _c("p", { staticClass: "text-lg" }, [
-                _vm._v(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                )
+            _c("div", { staticClass: "flex flex-wrap py-4" }, [
+              _c(
+                "div",
+                { staticClass: "w-full sm:w-1/4 px-4 bg-gray-200 py-2" },
+                [_c("p", {}, [_vm._v("Blok levo")])]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "w-full sm:w-3/4 px-8" }, [
+                _c("p", { staticClass: "text-lg" }, [
+                  _vm._v(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                  )
+                ])
               ])
             ])
-          ])
-        ]
-      )
-    ])
+          ]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true

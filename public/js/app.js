@@ -22886,123 +22886,131 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
-    _c(
-      "div",
-      {
-        staticClass: "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6"
-      },
-      [
-        _c(
-          "h1",
-          {
-            staticClass: "text-2xl font-semibold mt-2 pb-4 py-2 text-yellow-500"
-          },
-          [_vm._v("Contact")]
-        ),
-        _c("hr"),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex flex-wrap py-4" }, [
+  return _c(
+    "div",
+    { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 bg-white" },
+    [
+      _c(
+        "div",
+        {
+          staticClass:
+            "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6"
+        },
+        [
           _c(
-            "div",
-            { staticClass: "w-full sm:w-2/3 mb-5" },
-            [_c("contact-form-component")],
-            1
+            "h1",
+            {
+              staticClass:
+                "text-2xl font-semibold mt-2 pb-4 py-2 text-yellow-500"
+            },
+            [_vm._v("Contact")]
           ),
+          _c("hr"),
           _vm._v(" "),
-          _c("div", { staticClass: "w-full sm:w-1/3 px-8 text-lg" }, [
+          _c("div", { staticClass: "flex flex-wrap py-4" }, [
             _c(
-              "p",
-              { staticClass: "text-xl font-semibold leading-6 text-orange" },
-              [_vm._v("\n                    Publisher:\n                ")]
+              "div",
+              { staticClass: "w-full sm:w-2/3 mb-5" },
+              [_c("contact-form-component")],
+              1
             ),
             _vm._v(" "),
-            _c("p", { staticClass: "mt-1" }, [
-              _vm._v("\n                    UKAS"),
-              _c("br"),
-              _vm._v("\n                    Udruženje za kvalitet,"),
-              _c("br"),
-              _vm._v("\n                    akreditaciju i standardizaciju"),
-              _c("br"),
-              _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
-              _c("br"),
-              _vm._v("\n                    P: "),
+            _c("div", { staticClass: "w-full sm:w-1/3 px-8 text-lg" }, [
               _c(
-                "a",
-                {
-                  staticClass: "text-blue-600 hover:text-blue-800",
-                  attrs: { href: "tel:+381111234567" }
-                },
-                [_vm._v("+381 11 1234567")]
+                "p",
+                { staticClass: "text-xl font-semibold leading-6 text-orange" },
+                [_vm._v("\n                    Publisher:\n                ")]
               ),
-              _c("br"),
-              _vm._v("\n                    E: "),
-              _c(
-                "a",
-                {
-                  staticClass: "text-blue-600 hover:text-blue-800",
-                  attrs: { href: "mailto: office@q-sci.rs" }
-                },
-                [_vm._v("office@q-sci.rs")]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass: "text-xl font-semibold leading-6 mt-4 text-orange"
-              },
-              [
-                _vm._v(
-                  "\n                    Editor in chief:\n                "
+              _vm._v(" "),
+              _c("p", { staticClass: "mt-1" }, [
+                _vm._v("\n                    UKAS"),
+                _c("br"),
+                _vm._v("\n                    Udruženje za kvalitet,"),
+                _c("br"),
+                _vm._v("\n                    akreditaciju i standardizaciju"),
+                _c("br"),
+                _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
+                _c("br"),
+                _vm._v("\n                    P: "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "text-blue-600 hover:text-blue-800",
+                    attrs: { href: "tel:+381111234567" }
+                  },
+                  [_vm._v("+381 11 1234567")]
+                ),
+                _c("br"),
+                _vm._v("\n                    E: "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "text-blue-600 hover:text-blue-800",
+                    attrs: { href: "mailto: office@q-sci.rs" }
+                  },
+                  [_vm._v("office@q-sci.rs")]
                 )
-              ]
-            ),
-            _vm._v(" "),
-            _c("p", { staticClass: "mt-1" }, [
-              _vm._v("\n                    Miloš Vasić"),
-              _c("br"),
-              _vm._v("\n                    E: "),
+              ]),
+              _vm._v(" "),
               _c(
-                "a",
+                "p",
                 {
-                  staticClass: "text-blue-600 hover:text-blue-800",
-                  attrs: { href: "mailto: office@q-sci.rs" }
+                  staticClass:
+                    "text-xl font-semibold leading-6 mt-4 text-orange"
                 },
-                [_vm._v("office@q-sci.rs")]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass: "text-xl font-semibold leading-6 mt-4 text-orange"
-              },
-              [
-                _vm._v(
-                  "\n                    Editorial office:\n                "
+                [
+                  _vm._v(
+                    "\n                    Editor in chief:\n                "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("p", { staticClass: "mt-1" }, [
+                _vm._v("\n                    Miloš Vasić"),
+                _c("br"),
+                _vm._v("\n                    E: "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "text-blue-600 hover:text-blue-800",
+                    attrs: { href: "mailto: office@q-sci.rs" }
+                  },
+                  [_vm._v("office@q-sci.rs")]
                 )
-              ]
-            ),
-            _vm._v(" "),
-            _c("p", { staticClass: "mt-1" }, [
-              _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
-              _c("br"),
-              _vm._v("\n                    E: "),
+              ]),
+              _vm._v(" "),
               _c(
-                "a",
+                "p",
                 {
-                  staticClass: "text-blue-600 hover:text-blue-800",
-                  attrs: { href: "mailto: office@q-sci.rs" }
+                  staticClass:
+                    "text-xl font-semibold leading-6 mt-4 text-orange"
                 },
-                [_vm._v("office@q-sci.rs")]
-              )
+                [
+                  _vm._v(
+                    "\n                    Editorial office:\n                "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("p", { staticClass: "mt-1" }, [
+                _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
+                _c("br"),
+                _vm._v("\n                    E: "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "text-blue-600 hover:text-blue-800",
+                    attrs: { href: "mailto: office@q-sci.rs" }
+                  },
+                  [_vm._v("office@q-sci.rs")]
+                )
+              ])
             ])
           ])
-        ])
-      ]
-    )
-  ])
+        ]
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

@@ -23525,7 +23525,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
                     attrs: { href: "/search" }
                   },
                   [
@@ -23539,7 +23539,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
                     attrs: { href: "/browse-issues" }
                   },
                   [
@@ -23553,7 +23553,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
                     attrs: { href: "/instructions-for-authors" }
                   },
                   [
@@ -23567,7 +23567,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
                     attrs: { href: "/about" }
                   },
                   [
@@ -23581,7 +23581,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
                     attrs: { href: "/submit-a-paper" }
                   },
                   [
@@ -23595,7 +23595,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
                     attrs: { href: "/contact" }
                   },
                   [

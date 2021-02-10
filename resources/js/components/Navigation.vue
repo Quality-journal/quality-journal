@@ -13,22 +13,22 @@
                 </div>
                 <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" v-bind:class="{ 'hidden': !showMobileMenu}">
                     <div class="text-lg lg:flex-grow">
-                         <a :href="'/search'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
+                         <a :href="'/search'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4">
                             Search
                         </a>
-                        <a :href="'/browse-issues'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
+                        <a :href="'/browse-issues'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4">
                             Browse issues
                         </a>
-                        <a :href="'/instructions-for-authors'"  class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
+                        <a :href="'/instructions-for-authors'"  class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4">
                             Instructions for authors
                         </a>
-                        <a :href="'/about'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
+                        <a :href="'/about'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4">
                             About the journal
                         </a>
-                        <a :href="'/submit-a-paper'"  class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
+                        <a :href="'/submit-a-paper'"  class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4">
                             Submit a paper
                         </a>
-                        <a :href="'/contact'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-gray-200 mr-4">
+                        <a :href="'/contact'" class="block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4">
                             Contact
                         </a>
                     </div>

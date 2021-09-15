@@ -4,17 +4,17 @@
     <x-slot name="description">{{ $page->description }}</x-slot>
     <x-slot name="keywords">{{ $page->keywords }}</x-slot>
 
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 bg-white">
+    <div class="mx-auto sm:px-6 lg:px-8 bg-white">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-5">
 
              <div class="flex flex-wrap py-4">
 
                 <div class="w-3/4 sm:w-1/4 px-4 bg-gray-50 py-2 mt-3">
                     <p class="text-lg font-semibold mb-1 text-orange text-left">About the journal</p>
-                    <a href="/editorial-office" class="ml-5 p-2 hover:text-orange @if (Route::is('editorialOffice')) text-orange @endif">Editorial office</a><br>
-                    <a href="/reviewers" class="ml-5 p-2 hover:text-orange @if (Route::is('reviewers')) text-orange @endif">Reviewers</a><br>
-                    <a href="/publishing-council" class="ml-5 p-2 hover:text-orange @if (Route::is('publishingCouncil')) text-orange @endif">Publishing council</a><br>
-                    <a href="/ethics-and-policy" class="ml-5 p-2 hover:text-orange @if (Route::is('ethicsAndPolicy')) text-orange @endif">Ethics and policy</a><br>
+                    <a href="/editorial-office" class="ml-5 p-2 hover:text-orange transition-all @if (Route::is('editorialOffice')) text-orange @endif">Editorial office</a><br>
+                    <a href="/reviewers" class="ml-5 p-2 hover:text-orange transition-all @if (Route::is('reviewers')) text-orange @endif">Reviewers</a><br>
+                    <a href="/publishing-council" class="ml-5 p-2 hover:text-orange transition-all @if (Route::is('publishingCouncil')) text-orange @endif">Publishing council</a><br>
+                    <a href="/ethics-and-policy" class="ml-5 p-2 hover:text-orange transition-all @if (Route::is('ethicsAndPolicy')) text-orange @endif">Ethics and policy</a><br>
                 </div>
 
                 <div class="w-full sm:w-3/4 px-8">

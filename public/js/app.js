@@ -4151,9 +4151,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -4260,7 +4257,11 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   data: function data() {
     return {
       toggle: false,
-      toggleIssues: false
+      toggleIssues0: false,
+      toggleIssues1: false,
+      toggleIssues2: false,
+      toggleIssues3: false,
+      toggleIssues4: false
     };
   }
 });
@@ -4391,7 +4392,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.slider[data-v-872262e8] {\r\n  position: relative;\r\n  z-index: 1;\r\n  overflow: hidden;\r\n  height: 70vh;\n}\n.slider ul[data-v-872262e8] {\r\n  list-style: none;\n}\n.slider ul.slides[data-v-872262e8] {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n  transition: top 800ms;\n}\n.slider ul.slides li[data-v-872262e8] {\r\n  height: 100%;\n}\n.slider ul.slides li .img[data-v-872262e8] {\r\n  height: 100%;\r\n  background-size: cover;\r\n  background-position: 50%;\n}\n.slider ul.indicators[data-v-872262e8] {\r\n  position: absolute;\r\n  padding-right: 40px;\r\n  right: 0;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n  z-index: 2;\r\n  text-align: right;\n}\n.slider ul.indicators li[data-v-872262e8] {\r\n  clear: both;\n}\n.slider ul.indicators li .item[data-v-872262e8] {\r\n  position: relative;\r\n  margin-bottom: 16px;\r\n  float: right;\n}\n.slider ul.indicators li:last-child .item[data-v-872262e8] {\r\n  margin-bottom: 0;\n}\n.slider ul.indicators li .title[data-v-872262e8] {\r\n  color: #fff;\r\n  cursor: pointer;\r\n  font-size: 16px;\r\n  font-family: 'Poppins';\r\n  transition: font-size 0.6s ease-out;\n}\n.slider ul.indicators li .mark[data-v-872262e8] {\r\n  color: #fff;\r\n  font-family: 'Poppins';\n}\n.slider ul.indicators li .dot[data-v-872262e8] {\r\n  position: absolute;\r\n  top: 50%;\r\n  right: -20px;\r\n  margin-top: -5.5px;\r\n  margin-left: 10px;\r\n  width: 11px;\r\n  height: 11px;\r\n  background: #fff;\r\n  border-radius: 50%;\n}\n.slider ul.indicators li .progress[data-v-872262e8] {\r\n  position: relative;\r\n  display: inline-block;\r\n  width: 100%;\r\n  height: 2px;\r\n  margin: 8px 0;\r\n  background: rgba(255,255,255,0.5);\n}\n.slider ul.indicators li.active .title[data-v-872262e8] {\r\n  transition: font-size 0.6s ease-in;\r\n  font-size: 36px;\r\n  font-family: 'Poppins';\n}\n.slider ul.indicators li.active .progress .fill[data-v-872262e8] {\r\n  height: 100%;\r\n  background: #fff;\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.slider[data-v-872262e8] {\n    position: relative;\n    z-index: 1;\n    overflow: hidden;\n    height: 70vh;\n}\n.slider ul[data-v-872262e8] {\n    list-style: none;\n}\n.slider ul.slides[data-v-872262e8] {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    margin: 0;\n    padding: 0;\n    transition: top 800ms;\n}\n.slider ul.slides li[data-v-872262e8] {\n    height: 100%;\n}\n.slider ul.slides li .img[data-v-872262e8] {\n    height: 100%;\n    background-size: cover;\n    background-position: 50%;\n}\n.slider ul.indicators[data-v-872262e8] {\n    position: absolute;\n    padding-right: 40px;\n    right: 0;\n    top: 50%;\n    transform: translateY(-50%);\n    z-index: 2;\n    text-align: right;\n}\n.slider ul.indicators li[data-v-872262e8] {\n    clear: both;\n}\n.slider ul.indicators li .item[data-v-872262e8] {\n    position: relative;\n    margin-bottom: 16px;\n    float: right;\n}\n.slider ul.indicators li:last-child .item[data-v-872262e8] {\n    margin-bottom: 0;\n}\n.slider ul.indicators li .title[data-v-872262e8] {\n    color: #fff;\n    cursor: pointer;\n    font-size: 16px;\n    font-family: 'Poppins';\n    transition: font-size 0.6s ease-out;\n}\n.slider ul.indicators li .mark[data-v-872262e8] {\n    color: #fff;\n    font-family: 'Poppins';\n}\n.slider ul.indicators li .dot[data-v-872262e8] {\n    position: absolute;\n    top: 50%;\n    right: -20px;\n    margin-top: -5.5px;\n    margin-left: 10px;\n    width: 11px;\n    height: 11px;\n    background: #fff;\n    border-radius: 50%;\n}\n.slider ul.indicators li .progress[data-v-872262e8] {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n    height: 2px;\n    margin: 8px 0;\n    background: rgba(255,255,255,0.5);\n}\n.slider ul.indicators li.active .title[data-v-872262e8] {\n    transition: font-size 0.6s ease-in;\n    font-size: 36px;\n    font-family: 'Poppins';\n}\n.slider ul.indicators li.active .progress .fill[data-v-872262e8] {\n    height: 100%;\n    background: #fff;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22890,131 +22891,127 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 bg-white" },
-    [
-      _c(
-        "div",
-        {
-          staticClass:
-            "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6"
-        },
-        [
+  return _c("div", { staticClass: "mx-auto sm:px-6 lg:px-8 bg-white" }, [
+    _c(
+      "div",
+      {
+        staticClass: "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6"
+      },
+      [
+        _c(
+          "h1",
+          {
+            staticClass: "text-2xl font-semibold mt-2 pb-4 py-2 text-yellow-500"
+          },
+          [_vm._v("Contact")]
+        ),
+        _c("hr"),
+        _vm._v(" "),
+        _c("div", { staticClass: "flex flex-wrap py-4" }, [
           _c(
-            "h1",
-            {
-              staticClass:
-                "text-2xl font-semibold mt-2 pb-4 py-2 text-yellow-500"
-            },
-            [_vm._v("Contact")]
+            "div",
+            { staticClass: "w-full sm:w-2/3 mb-5" },
+            [_c("contact-form-component")],
+            1
           ),
-          _c("hr"),
           _vm._v(" "),
-          _c("div", { staticClass: "flex flex-wrap py-4" }, [
+          _c("div", { staticClass: "w-full sm:w-1/3 px-8 text-lg" }, [
             _c(
-              "div",
-              { staticClass: "w-full sm:w-2/3 mb-5" },
-              [_c("contact-form-component")],
-              1
+              "p",
+              { staticClass: "text-xl font-semibold leading-6 text-orange" },
+              [_vm._v("\n                    Publisher:\n                ")]
             ),
             _vm._v(" "),
-            _c("div", { staticClass: "w-full sm:w-1/3 px-8 text-lg" }, [
+            _c("p", { staticClass: "mt-1" }, [
+              _vm._v("\n                    UKAS"),
+              _c("br"),
+              _vm._v("\n                    Udruženje za kvalitet,"),
+              _c("br"),
+              _vm._v("\n                    akreditaciju i standardizaciju"),
+              _c("br"),
+              _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
+              _c("br"),
+              _vm._v("\n                    P: "),
               _c(
-                "p",
-                { staticClass: "text-xl font-semibold leading-6 text-orange" },
-                [_vm._v("\n                    Publisher:\n                ")]
-              ),
-              _vm._v(" "),
-              _c("p", { staticClass: "mt-1" }, [
-                _vm._v("\n                    UKAS"),
-                _c("br"),
-                _vm._v("\n                    Udruženje za kvalitet,"),
-                _c("br"),
-                _vm._v("\n                    akreditaciju i standardizaciju"),
-                _c("br"),
-                _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
-                _c("br"),
-                _vm._v("\n                    P: "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-blue-600 hover:text-blue-800",
-                    attrs: { href: "tel:+381111234567" }
-                  },
-                  [_vm._v("+381 11 1234567")]
-                ),
-                _c("br"),
-                _vm._v("\n                    E: "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-blue-600 hover:text-blue-800",
-                    attrs: { href: "mailto: office@q-sci.rs" }
-                  },
-                  [_vm._v("office@q-sci.rs")]
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "p",
+                "a",
                 {
                   staticClass:
-                    "text-xl font-semibold leading-6 mt-4 text-orange"
+                    "text-blue-600 hover:text-blue-800 transition-all",
+                  attrs: { href: "tel:+381111234567" }
                 },
-                [
-                  _vm._v(
-                    "\n                    Editor in chief:\n                "
-                  )
-                ]
+                [_vm._v("+381 11 1234567")]
               ),
-              _vm._v(" "),
-              _c("p", { staticClass: "mt-1" }, [
-                _vm._v("\n                    Miloš Vasić"),
-                _c("br"),
-                _vm._v("\n                    E: "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-blue-600 hover:text-blue-800",
-                    attrs: { href: "mailto: office@q-sci.rs" }
-                  },
-                  [_vm._v("office@q-sci.rs")]
-                )
-              ]),
-              _vm._v(" "),
+              _c("br"),
+              _vm._v("\n                    E: "),
               _c(
-                "p",
+                "a",
                 {
                   staticClass:
-                    "text-xl font-semibold leading-6 mt-4 text-orange"
+                    "text-blue-600 hover:text-blue-800 transition-all",
+                  attrs: { href: "mailto: office@q-sci.rs" }
                 },
-                [
-                  _vm._v(
-                    "\n                    Editorial office:\n                "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("p", { staticClass: "mt-1" }, [
-                _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
-                _c("br"),
-                _vm._v("\n                    E: "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-blue-600 hover:text-blue-800",
-                    attrs: { href: "mailto: office@q-sci.rs" }
-                  },
-                  [_vm._v("office@q-sci.rs")]
+                [_vm._v("office@q-sci.rs")]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass: "text-xl font-semibold leading-6 mt-4 text-orange"
+              },
+              [
+                _vm._v(
+                  "\n                    Editor in chief:\n                "
                 )
-              ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("p", { staticClass: "mt-1" }, [
+              _vm._v("\n                    Miloš Vasić"),
+              _c("br"),
+              _vm._v("\n                    E: "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "text-blue-600 hover:text-blue-800 transition-all",
+                  attrs: { href: "mailto: office@q-sci.rs" }
+                },
+                [_vm._v("office@q-sci.rs")]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass: "text-xl font-semibold leading-6 mt-4 text-orange"
+              },
+              [
+                _vm._v(
+                  "\n                    Editorial office:\n                "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c("p", { staticClass: "mt-1" }, [
+              _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
+              _c("br"),
+              _vm._v("\n                    E: "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "text-blue-600 hover:text-blue-800 transition-all",
+                  attrs: { href: "mailto: office@q-sci.rs" }
+                },
+                [_vm._v("office@q-sci.rs")]
+              )
             ])
           ])
-        ]
-      )
-    ]
-  )
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -23171,7 +23168,7 @@ var staticRenderFns = [
           "button",
           {
             staticClass:
-              "text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg",
+              "text-white bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:opacity-80 rounded text-lg transition-all",
             attrs: { type: "submit" }
           },
           [_vm._v("Send")]
@@ -23203,64 +23200,59 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "bg-blue-700 footer" }, [
-    _c(
-      "div",
-      { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 text-white h-auto" },
-      [
-        _c("div", { staticClass: "flex flex-wrap py-4 px-4" }, [
-          _c("div", { staticClass: "w-full sm:w-1/4 px-2" }, [
-            _c("a", { attrs: { href: "/" } }, [
-              _c(
-                "span",
-                {
-                  staticClass:
-                    "font-semibold text-xl tracking-tight px-6 md:px-0"
-                },
-                [_vm._v("Journal of Quality Engineering")]
-              )
-            ])
+    _c("div", { staticClass: " mx-auto sm:px-6 lg:px-8 text-white h-auto" }, [
+      _c("div", { staticClass: "flex flex-wrap py-4 px-4" }, [
+        _c("div", { staticClass: "w-full sm:w-1/4 px-2" }, [
+          _c("a", { attrs: { href: "/" } }, [
+            _c(
+              "span",
+              {
+                staticClass: "font-semibold text-xl tracking-tight px-6 md:px-0"
+              },
+              [_vm._v("Journal of Quality Engineering")]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "w-full sm:w-2/4 px-8 mt-4 sm:mt-0" }, [
+          _c("p", { staticClass: "font-bold" }, [
+            _vm._v("Journal of Quality Engineering")
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "w-full sm:w-2/4 px-8 mt-4 sm:mt-0" }, [
-            _c("p", { staticClass: "font-bold" }, [
-              _vm._v("Journal of Quality Engineering")
+          _c("ul", { staticClass: "list-style-none mt-2" }, [
+            _c("li", [
+              _c("a", { attrs: { href: "/browse-issues" } }, [
+                _vm._v("Browse issues")
+              ])
             ]),
             _vm._v(" "),
-            _c("ul", { staticClass: "list-style-none mt-2" }, [
-              _c("li", [
-                _c("a", { attrs: { href: "/browse-issues" } }, [
-                  _vm._v("Browse issues")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/instructions-for-authors" } }, [
-                  _vm._v("Instructions for authors")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/about" } }, [
-                  _vm._v("About the journal")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/submit-a-paper" } }, [
-                  _vm._v("Submit a paper")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/contact" } }, [_vm._v("Contact")])
+            _c("li", [
+              _c("a", { attrs: { href: "/instructions-for-authors" } }, [
+                _vm._v("Instructions for authors")
               ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/about" } }, [
+                _vm._v("About the journal")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/submit-a-paper" } }, [
+                _vm._v("Submit a paper")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/contact" } }, [_vm._v("Contact")])
             ])
-          ]),
-          _vm._v(" "),
-          _vm._m(0)
-        ])
-      ]
-    ),
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(0)
+      ])
+    ]),
     _vm._v(" "),
     _c("hr"),
     _vm._v(" "),
@@ -23293,15 +23285,28 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 text-white h-auto" },
+      {
+        staticClass:
+          "mx-auto sm:px-6 lg:px-8 text-white text-center sm:text-left h-auto"
+      },
       [
         _c("div", { staticClass: "flex flex-wrap py-4 px-4" }, [
           _c("div", { staticClass: "w-full sm:w-1/2" }, [
-            _c("p", [_vm._v("@2021 Journal of Quality Engineering")])
+            _c("p", [_vm._v("© 2021 Journal of Quality Engineering")])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "w-full sm:w-1/2" }, [
-            _c("p", { staticClass: "md:float-right" }, [_vm._v("Project Land")])
+            _c("p", { staticClass: "md:float-right" }, [
+              _vm._v("Created by "),
+              _c(
+                "a",
+                {
+                  staticClass: "hover:text-orange transition-all",
+                  attrs: { href: "https://projectland.rs", target: "_blank" }
+                },
+                [_vm._v("Projectland")]
+              )
+            ])
           ])
         ])
       ]
@@ -23462,7 +23467,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "bg-blue-700" }, [
-    _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
+    _c("div", { staticClass: "mx-auto sm:px-6 lg:px-8" }, [
       _c(
         "nav",
         { staticClass: "flex items-center justify-between flex-wrap p-6" },
@@ -23486,7 +23491,7 @@ var render = function() {
               "button",
               {
                 staticClass:
-                  "flex items-center px-3 py-2 text-white hover:text-white",
+                  "flex items-center px-3 py-2 text-white hover:text-white transition-all",
                 on: { click: _vm.toggleMobileMenu }
               },
               [
@@ -23516,7 +23521,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "w-full block flex-grow lg:flex lg:items-center lg:w-auto",
+                "w-full block flex-grow lg:flex lg:items-center lg:w-auto text-right",
               class: { hidden: !_vm.showMobileMenu }
             },
             [
@@ -23525,7 +23530,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4 transition-all",
                     attrs: { href: "/search" }
                   },
                   [
@@ -23539,7 +23544,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4 transition-all",
                     attrs: { href: "/browse-issues" }
                   },
                   [
@@ -23553,7 +23558,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4 transition-all",
                     attrs: { href: "/instructions-for-authors" }
                   },
                   [
@@ -23567,7 +23572,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4 transition-all",
                     attrs: { href: "/about" }
                   },
                   [
@@ -23581,7 +23586,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4 transition-all",
                     attrs: { href: "/submit-a-paper" }
                   },
                   [
@@ -23595,7 +23600,7 @@ var render = function() {
                   "a",
                   {
                     staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
+                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4 transition-all",
                     attrs: { href: "/contact" }
                   },
                   [

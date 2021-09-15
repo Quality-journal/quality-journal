@@ -1,7 +1,7 @@
 <template>
 
     <div class="bg-blue-700 footer">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 text-white h-auto">
+        <div class=" mx-auto sm:px-6 lg:px-8 text-white h-auto">
             <div class="flex flex-wrap py-4 px-4">
                 <div class="w-full sm:w-1/4 px-2">
                     <a :href="'/'"><span class="font-semibold text-xl tracking-tight px-6 md:px-0">Journal of Quality Engineering</span></a>
@@ -28,10 +28,10 @@
             </div>
         </div>
         <hr>
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 text-white h-auto">
+        <div class="mx-auto sm:px-6 lg:px-8 text-white text-center sm:text-left h-auto">
             <div class="flex flex-wrap py-4 px-4">
-                <div class="w-full sm:w-1/2"><p>@2021 Journal of Quality Engineering</p></div>
-                <div class="w-full sm:w-1/2"><p class="md:float-right">Project Land</p></div>
+                <div class="w-full sm:w-1/2"><p>&copy; 2021 Journal of Quality Engineering</p></div>
+                <div class="w-full sm:w-1/2"><p class="md:float-right">Created by <a class="hover:text-orange transition-all" href="https://projectland.rs" target="_blank">Projectland</a></p></div>
             </div>
         </div>
     </div>
@@ -48,5 +48,5 @@
     .bg-color{
         background-color: #FA5F1A;
     }
- 
+
 </style>

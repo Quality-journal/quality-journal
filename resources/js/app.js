@@ -14,7 +14,11 @@ const app = new Vue({
     data () {
         return {
           toggle: false,
-          toggleIssues: false
+          toggleIssues0: false,
+          toggleIssues1: false,
+          toggleIssues2: false,
+          toggleIssues3: false,
+          toggleIssues4: false
         }
     }
 });

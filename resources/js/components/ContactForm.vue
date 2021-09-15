@@ -2,7 +2,7 @@
 
 <div>
    <form action="/sendmail" method="get">
-     
+
         <div class="shadow overflow-hidden">
           <div class="px-4 py-5 sm:p-6 formdiv">
             <div class="grid grid-cols-6 gap-6">
@@ -21,7 +21,7 @@
             </div>
           </div>
           <div class="px-4 py-3 bg-gray-50 text-right sm:px-6 formdiv">
-              <button  type="submit" class="text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg">Send</button>
+              <button  type="submit" class="text-white bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:opacity-80 rounded text-lg transition-all">Send</button>
           </div>
         </div>
       </form>
@@ -38,7 +38,7 @@
           email:' ',
           message:' '
       }
-      
+
       },
       methods:{
         submitForm(event){
@@ -46,7 +46,7 @@
        // event.target.submit();
         }
       }
-        
+
     };
 </script>
 

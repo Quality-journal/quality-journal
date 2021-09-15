@@ -4,7 +4,7 @@
     <x-slot name="description">{{ 'Browse issues' }}</x-slot>
     <x-slot name="keywords">{{ 'browse, issues' }}</x-slot>
 
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-60 bg-white">
+    <div class="mx-auto sm:px-6 lg:px-8 pb-60 bg-white">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-5">
 
              <div class="flex flex-wrap py-4">
@@ -19,7 +19,7 @@
                             <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
                                 <div class="bg-gray-50 px-4 py-6">
                                     <h3 class="title-font font-semibold text-3xl text-gray-900">
-                                        <a class="text-center text-orange hover:text-yellow-700" href="/selection/{{ $selection->slug }}"> {{ $selection->title }} </a>
+                                        <a class="text-center text-orange hover:text-yellow-700 transition-all" href="/selection/{{ $selection->slug }}"> {{ $selection->title }} </a>
                                     </h3>
                                 </div>
                             </div>

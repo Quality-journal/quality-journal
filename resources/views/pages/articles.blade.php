@@ -4,7 +4,7 @@
     <x-slot name="description">{{ $currentIssue->description }}</x-slot>
     <x-slot name="keywords">{{ $currentIssue->keywords }}</x-slot>
 
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 bg-white">
+    <div class="mx-auto sm:px-6 lg:px-8 bg-white">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-5">
 
              <div class="flex flex-wrap py-4">
@@ -26,11 +26,11 @@
                             <div class="px-4 w-full">
                                 <div class="flex flex-wrap text-left border-b py-4">
                                     <h3 class="w-full title-font font-medium text-xl">
-                                        <a class="text-center text-orange hover:text-yellow-700" href="/article/{{ $article->slug }}"> {{ $article->title }} </a>
+                                        <a class="text-center text-orange hover:text-yellow-700 transition-all" href="/article/{{ $article->slug }}"> {{ $article->title }} </a>
                                     </h3>
                                     <p class="w-full text-lg mt-3">{{ $article->authors_names }}</p>
-                                    <a href="/article/{{ $article->slug }}" class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-200 hover:bg-orange hover:text-white">View More <i class="fas fa-arrow-right ml-2"></i> </a>
-                                    <a href="{{ asset('/articles_pdf/'.$article->pdf) }}" target="_blank" class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-200 hover:bg-orange hover:text-white">Download <i class="fas fa-download ml-2"></i> </a>
+                                    <a href="/article/{{ $article->slug }}" class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-200 hover:bg-orange hover:text-white transition-all">View More <i class="fas fa-arrow-right ml-2"></i> </a>
+                                    <a href="{{ asset('/articles_pdf/'.$article->pdf) }}" target="_blank" class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-200 hover:bg-orange hover:text-white transition-all">Download <i class="fas fa-download ml-2"></i> </a>
                                     <div>
                                         <p class="mt-3">Downloads: 100</p>
                                         <p>Views: 250</p>

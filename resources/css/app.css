@@ -1,0 +1,46 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+    .ck-content .text-tiny {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+
+    .ck-content .text-small {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    .ck-content .text-big {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .ck-content .text-huge {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .ck-content ul, .ck-content ol {
+        margin-left: 1.5rem;
+    }
+
+    .ck-content h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .ck-content h3 {
+        font-size: 1.17em;
+        font-weight: 600;
+    }
+
+    .ck-content h4 {
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    .grecaptcha-badge { visibility: hidden !important; }
+}

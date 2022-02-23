@@ -29,7 +29,6 @@ Route::get('/article/{article}', [BrowseIssuesController::class, 'article'])->na
 Route::get('/search/searching', [SearchController::class, 'searching'])->name('searching');
 Route::get('/sendmail', [FrontController::class, 'sendmail'])->name('sendmail');
 
-
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');

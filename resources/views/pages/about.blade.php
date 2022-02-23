@@ -31,7 +31,7 @@
                     </div>
                     @endif
 
-                    <div class="mt-3 ck-content h-96">{!! $page->content !!}</div>
+                    <div class="mt-3 ck-content h-auto">{!! $page->content !!}</div>
                 </div>
             </div>
 

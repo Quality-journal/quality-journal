@@ -12,6 +12,7 @@
                 @include('components.browse-issues-side-menu')
 
                 <div class="w-full sm:w-3/4 px-8">
+                    @if($issue)
                     <h1 class="text-2xl font-semibold mt-2 pb-4 text-yellow-500">{{ $issue->title }}</h1>
                     <hr>
 
@@ -39,6 +40,7 @@
                         </div>
                         @endforeach
                     </div>
+                    @endif
                 </div>
             </div>
         </div>

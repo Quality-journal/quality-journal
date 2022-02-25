@@ -1,20 +1,20 @@
 <template>
-  <div class="bg-blue-600">
+  <div class="bg-newyellow">
     <div class="mx-auto sm:px-6 lg:px-8">
-      <nav class="flex justify-between p-6 flex-wrap">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <nav class="flex justify-between flex-wrap">
+        <div class="flex items-center p-6 flex-shrink-0 text-gray-600 mr-6">
           <a class="flex flex-col space-y-1" :href="'/'">
-            <span class="font-semibold text-xl tracking-tight"
-              >Journal of Quality Engineering</span
+            <span class="font-semibold text-md sm:text-xl tracking-tight"
+              >Journal of Quality and System Engineering</span
             >
-            <span>International journal</span>
+            <span class="text-sm sm:text-base">International journal</span>
           </a>
         </div>
 
-        <div class="block lg:hidden">
+        <div class="flex flex-col w-full lg:hidden px-3 pb-2">
           <button
             @click="toggleMobileMenu"
-            class="flex items-center px-3 py-2 text-white hover:text-white"
+            class="flex justify-end px-3 py-2 text-gray-600 hover:text-gray-900"
           >
             <svg
               class="fill-current h-3 w-3"
@@ -47,8 +47,9 @@
                 mt-4
                 lg:inline-block
                 md:mt-0
-                text-white
-                hover:text-yellow-500
+                text-gray-600
+                hover:text-gray-800
+                transition-all
                 mr-4
               "
             >
@@ -62,8 +63,9 @@
                 mt-4
                 lg:inline-block
                 md:mt-0
-                text-white
-                hover:text-yellow-500
+                text-gray-600
+            hover:text-gray-800
+                transition-all
                 mr-4
               "
             >
@@ -76,8 +78,9 @@
                 mt-4
                 lg:inline-block
                 md:mt-0
-                text-white
-                hover:text-yellow-500
+                text-gray-600
+                hover:text-gray-800
+                transition-all
                 mr-4
               "
               >Instructions for authors</a
@@ -89,8 +92,9 @@
                 mt-4
                 lg:inline-block
                 md:mt-0
-                text-white
-                hover:text-yellow-500
+                text-gray-600
+                hover:text-gray-800
+                transition-all
                 mr-4
               "
               >Submit a paper</a
@@ -102,8 +106,9 @@
                 mt-4
                 lg:inline-block
                 md:mt-0
-                text-white
-                hover:text-yellow-500
+                text-gray-600
+                hover:text-gray-800
+                transition-all
                 mr-4
               "
               >Contact</a
@@ -115,8 +120,9 @@
                 mt-4
                 lg:inline-block
                 md:mt-0
-                text-white
-                hover:text-yellow-500
+                text-gray-600
+                hover:text-gray-800
+                transition-all
                 mr-4
               "
               >Search</a

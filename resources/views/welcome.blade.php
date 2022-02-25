@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-    <x-slot name="title">Journal of Quality Engineering</x-slot>
+    <x-slot name="title">Journal of Quality and Systems Engineering</x-slot>
     <x-slot name="description">{{ $page->description }}</x-slot>
     <x-slot name="keywords">{{ $page->keywords }}</x-slot>
 
@@ -9,7 +9,7 @@
     <div class="mx-auto sm:px-6 lg:px-8 bg-white">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6">
             <div class="bg-white">
-                <h1 class="text-2xl font-semibold mt-2 pb-4">Journal of Quality Engineering</h1>
+                <h1 class="text-2xl font-semibold mt-2 pb-4">Journal of Quality and Systems Engineering</h1>
                 <hr>
                 <div class="flex flex-wrap py-4">
                     <div class="w-full sm:w-1/4 px-2">

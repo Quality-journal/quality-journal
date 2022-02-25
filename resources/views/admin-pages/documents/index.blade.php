@@ -38,9 +38,8 @@
                         @foreach($documents as $document)
                         <tr>
                             <td class="w-1/3 text-left py-3 px-4">{{ $document->title }}</td>
-                            <td class="w-1/3 text-left py-3 px-4">https://m-sci.rs/files/{{ $document->path }}</td>
-                            <td class="w-1/3 text-right py-3 px-4"><a href="{{ route('documents.edit', $document)}}"><i
-                                        class="fas fa-edit text-blue-500"></i></a>
+                            <td class="w-1/3 text-left py-3 px-4"><a class="hover:text-blue-400" href="https://q-sci.rs/files/{{ $document->path }}" target="_blank">https://q-sci.rs/files/{{ $document->path }}</a></td>
+                            <td class="w-1/3 text-right py-3 px-4"><a href="{{ route('documents.edit', $document)}}"><i class="fas fa-edit text-blue-500"></i></a>
                             </td>
                         </tr>
                         @endforeach

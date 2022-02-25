@@ -11,6 +11,9 @@ module.exports = {
             colors: {
                 orange: {
                     DEFAULT: '#ee7c00'
+                },
+                newyellow: {
+                    DEFAULT: '#fee001'
                 }
             }
         },

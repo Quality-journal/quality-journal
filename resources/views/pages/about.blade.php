@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-    <x-slot name="title">Journal of Quality Engineering | {{ ucfirst($page->title) }}</x-slot>
+    <x-slot name="title">Journal of Quality and System Engineering | {{ ucfirst($page->title) }}</x-slot>
     <x-slot name="description">{{ $page->description }}</x-slot>
     <x-slot name="keywords">{{ $page->keywords }}</x-slot>
 
@@ -10,19 +10,19 @@
             <div class="flex flex-wrap py-4">
 
                 <div class="w-full sm:w-1/4 px-4 bg-gray-200 py-2 mt-3">
-                    <p class="text-lg font-semibold mb-1 text-yellow-500 text-left">About the journal</p>
-                    <a href="/editorial-board" class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('editorialOffice')) text-yellow-500 @endif">Editorial
+                    <p class="text-lg font-semibold mb-1 text-gray-800 text-left">About the journal</p>
+                    <a href="/editorial-board" class="ml-5 p-2 hover:text-gray-600 transition-all @if (Route::is('editorialOffice')) text-gray-800 @endif">Editorial
                         board</a><br>
-                    <a href="/ethics-and-policy" class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('ethicsAndPolicy')) text-yellow-500 @endif">Ethics
+                    <a href="/ethics-and-policy" class="ml-5 p-2 hover:text-gray-600 transition-all @if (Route::is('ethicsAndPolicy')) text-gray-800 @endif">Ethics
                         and policy</a><br>
-                    <a href="/review-process" class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('reviewers')) text-yellow-500 @endif">Review
+                    <a href="/review-process" class="ml-5 p-2 hover:text-gray-600 transition-all @if (Route::is('reviewers')) text-gray-800 @endif">Review
                         process</a><br>
-                    <a href="/publishing-council" class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('publishingCouncil')) text-yellow-500 @endif">Publishing
+                    <a href="/publishing-council" class="ml-5 p-2 hover:text-gray-600 transition-all @if (Route::is('publishingCouncil')) text-gray-800 @endif">Publishing
                         council</a><br>
                 </div>
 
                 <div class="w-full sm:w-3/4 px-8">
-                    <h1 class="text-2xl font-semibold mt-2 pb-4 py-2 text-yellow-500">{{ $title }}</h1>
+                    <h1 class="text-2xl font-semibold mt-2 pb-4 py-2 text-gray-800">{{ $title }}</h1>
                     <hr>
 
                     @if(Route::is('reviewers'))

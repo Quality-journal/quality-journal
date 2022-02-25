@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-blue-600 footer">
-    <div class="mx-auto sm:px-6 text-white h-auto">
+  <div class="bg-newyellow footer">
+    <div class="mx-auto sm:px-6 text-gray-600 h-auto">
       <div class="flex flex-wrap py-4 px-4">
         <div class="w-full sm:w-1/4 px-2">
           <!-- <a :href="'/'"
@@ -8,13 +8,13 @@
               >Science of Maintenance</span
             ></a
           > -->
-          <div class="m-auto sm:m-0 w-1/2 p-4 border-2 border-white">
+          <div class="m-auto sm:m-0 w-1/2 p-4 border-2 border-gray-600">
             <img class="w-full text-center" src="/images/iipp.gif" alt="iipp" />
             <p class="mt-3 text-center">publishing</p>
           </div>
         </div>
         <div class="w-full sm:w-2/4 px-8 mt-4 sm:mt-0">
-          <p class="font-bold">Journal of Quality Engineering</p>
+          <p class="font-bold">Journal of Quality and System Engineering</p>
           <ul class="list-style-none mt-2">
             <li><a :href="'/about'">About the journal</a></li>
             <li><a :href="'/browse-issues'">Browse issues</a></li>
@@ -37,16 +37,16 @@
       </div>
     </div>
     <hr />
-    <div class="mx-auto sm:px-6 lg:px-8 text-white h-auto">
+    <div class="mx-auto sm:px-6 lg:px-8 text-gray-600 h-auto">
       <div class="flex flex-wrap py-4 px-4">
-        <div class="w-full sm:w-1/2">
-          <p>&copy; 2022 Journal of Quality Engineering</p>
+        <div class="w-full sm:w-1/2 text-sm sm:text-base">
+          <p>&copy; 2022 Journal of Quality and System Engineering</p>
         </div>
-        <div class="w-full sm:w-1/2">
+        <div class="w-full sm:w-1/2 flex justify-center sm:block sm:justify-between text-sm sm:text-base">
           <p class="md:float-right">
             Created by
             <a
-              class="hover:text-yellow-600"
+              class="hover:text-gray-900"
               href="https://projectland.rs"
               target="blank"
               >Projectland</a

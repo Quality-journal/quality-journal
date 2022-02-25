@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-    <x-slot name="title">Science of Maintenance | {{ $article->title }}</x-slot>
+    <x-slot name="title">Journal of Quality and System Engineering| {{ $article->title }}</x-slot>
     <x-slot name="description">{{ $article->description }}</x-slot>
     <x-slot name="keywords">{{ $article->keywords }}</x-slot>
 
@@ -12,7 +12,7 @@
                 @include('components.browse-issues-side-menu')
 
                 <div class="w-full sm:w-3/4 px-8">
-                    <h1 class="text-2xl font-semibold mt-1 pb-4 text-yellow-500">{{ $article->title }}</h1>
+                    <h1 class="text-2xl font-semibold mt-1 pb-4 text-gray-800">{{ $article->title }}</h1>
                     <hr>
 
                     <h2 class="text-xl font-semibold my-2 mb-2">Scientific paper information</h2>
@@ -50,10 +50,8 @@
                         </div>
 
                         <div class="w-full sm:w-1/3 flex justify-center float-right mt-3">
-                            <div
-                                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-600 text-white mr-10 mb-10 flex-shrink-0 cursor-pointer">
-                                <div class="font-bold text-center"><a href="{{ asset('/articles_pdf/'.$article->pdf) }}" target="_blank"><i
-                                            class="fas fa-download"></i><br>PDF</a></div>
+                            <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-600 text-white mr-10 mb-10 flex-shrink-0 cursor-pointer">
+                                <div class="font-bold text-center"><a href="{{ asset('/articles_pdf/'.$article->pdf) }}" target="_blank"><i class="fas fa-download"></i><br>PDF</a></div>
                             </div>
                         </div>
                     </div>
@@ -74,8 +72,6 @@
                     </div>
 
                     <hr>
-
-
 
                 </div>
             </div>

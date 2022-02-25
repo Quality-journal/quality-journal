@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-    <x-slot name="title">Journal of Quality Engineering | {{ 'Browse issues' }}</x-slot>
+    <x-slot name="title">Journal of Quality and System Engineering | {{ 'Browse issues' }}</x-slot>
     <x-slot name="description">{{ 'Browse issues' }}</x-slot>
     <x-slot name="keywords">{{ 'browse, issues' }}</x-slot>
 
@@ -13,7 +13,7 @@
 
                 <div class="w-full sm:w-3/4 px-8">
                     @if($issue)
-                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-yellow-500">{{ $issue->title }}</h1>
+                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-gray-800">{{ $issue->title }}</h1>
                     <hr>
 
                     <div class="flex py-4 flex-col sm:flex-row">
@@ -28,13 +28,13 @@
                         <div class="px-4 w-full">
                             <div class="flex flex-wrap text-left border-b py-4">
                                 <h3 class="w-full title-font font-medium text-xl">
-                                    <a class="text-center text-yellow-500 hover:text-yellow-700 transition-all" href="/article/{{ $article->slug }}"> {{
+                                    <a class="text-center text-gray-800 hover:text-gray-600 transition-all" href="/article/{{ $article->slug }}"> {{
                                         $article->title }} </a>
                                 </h3>
                                 <p class="w-full text-lg mt-3">{{ $article->authors_names }} - {{ $article->doi }}</p>
-                                <a href="/article/{{ $article->slug }}" class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-100 hover:bg-yellow-500 hover:text-white transition-all">View
+                                <a href="/article/{{ $article->slug }}" class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-100 hover:bg-newyellow hover:text-gray-800 transition-all">View
                                     More <i class="fas fa-arrow-right ml-2"></i> </a>
-                                <a href="{{ asset('/articles_pdf/'.$article->pdf) }}" target="_blank" class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-100 hover:bg-yellow-500 hover:text-white transition-all">Download
+                                <a href="{{ asset('/articles_pdf/'.$article->pdf) }}" target="_blank" class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-100 hover:bg-newyellow hover:text-gray-800 transition-all">Download
                                     <i class="fas fa-download ml-2"></i> </a>
                             </div>
                         </div>

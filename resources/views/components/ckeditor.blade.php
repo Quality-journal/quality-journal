@@ -100,7 +100,7 @@
                     label: 'Orange'
                 },
                 {
-                    color: 'hsl(60, 75%, 60%)',
+                    color: '#fee001',
                     label: 'Yellow'
                 },
                 {

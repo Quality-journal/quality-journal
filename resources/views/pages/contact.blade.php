@@ -10,8 +10,7 @@
             </h1>
             <hr />
             <div class="flex flex-wrap py-4">
-                <div class="w-full sm:w-2/3 mb-5">
-
+                <div class="w-full sm:w-3/5 mb-5">
                     <div>
                         <form action="/sendmail" ref="form" method="get" id="form">
                             <div class="shadow overflow-hidden">
@@ -77,7 +76,7 @@
                                     "></textarea>
                                         </div>
                                     </div>
-                                    {!! RecaptchaV3::field('contactme') !!}
+                                    {!! Lunaweb\RecaptchaV3\Facades\RecaptchaV3::field('contactme') !!}
                                 </div>
                                 <div class="px-4 py-3 bg-gray-50 text-right sm:px-6 formdiv">
                                     <button type="submit" class="
@@ -99,41 +98,46 @@
                             </div>
                         </form>
                     </div>
-
                 </div>
-                <div class="w-full sm:w-1/3 px-8 text-lg">
+                <div class="w-full sm:w-2/5 px-8 text-lg">
                     <p class="text-xl font-semibold leading-6 mt-4 text-gray-800">
                         Editor in chief:
                     </p>
                     <p class="mt-1">
-                        Dr Nada Stanojević<br />
+                        Miloš Vasić<br />
                         E:
-                        <a class="text-blue-600 hover:text-blue-800" href="mailto:nstanojevic@m-sci.rs">nstanojevic@m-sci.rs</a>
+                        <a class="text-blue-600 hover:text-blue-800" href="mailto:mvasic@q-sci.rs">mvasic@q-sci.rs</a>
                     </p>
-                    <p class="text-xl font-semibold leading-6 mt-4 text-gray-800">
+                    {{-- <p class="text-xl font-semibold leading-6 mt-4 text-gray-800">
                         Editorial office:
                     </p>
                     <p class="mt-1">
                         Kraljice Marije 16,<br />11000 Belgrade, Serbia<br />
                         E:
-                        <a class="text-blue-600 hover:text-blue-800" href="mailto:office@m-sci.rs">office@m-sci.rs</a>
-                    </p>
+                        <a class="text-blue-600 hover:text-blue-800" href="mailto:office@q-sci.rs">office@q-sci.rs</a>
+                    </p> --}}
                     <p class="mt-4 text-xl font-semibold leading-6 text-gray-800">
                         Publisher:
                     </p>
                     <p class="mt-1">
-                        <strong>Institute for research</strong><br />
+                        <strong>Institute for research</strong>
                         <strong>and design in industry</strong><br />
-                        E:
-                        <a class="text-blue-600 hover:text-blue-800" :href="'mailto: office@iipp.rs'">office@iipp.rs</a>
+                    <p>Vatroslava Lisinskog 12a, 11000 Belgrade, Serbia</p>
+                    W:
+                    <a class="text-blue-600 hover:text-blue-800" href="https://www.iipp.rs/" target="blank">www.iipp.rs</a><br>
+                    E:
+                    <a class="text-blue-600 hover:text-blue-800" :href="'mailto: office@iipp.rs'">office@iipp.rs</a>
                     </p>
                     <p class="mt-4 text-xl font-semibold leading-6 text-gray-800">
                         Co-Publisher:
                     </p>
                     <p class="mt-1">
-                        <strong>Serbian Maintenance Society</strong><br />
-                        E:
-                        <a class="text-blue-600 hover:text-blue-800" :href="'mailto: office@dots.rs'">office@dots.rs</a>
+                        <strong>Association for Quality, Acreditation and Standardization</strong><br />
+                    <p>Takovska 5, 11000 Belgrade, Serbia</p>
+                    W:
+                    <a class="text-blue-600 hover:text-blue-800" href="https://www.ukas.rs/" target="blank">www.ukas.rs</a><br>
+                    E:
+                    <a class="text-blue-600 hover:text-blue-800" :href="'mailto: office@ukas.rs'">office@ukas.rs</a>
                     </p>
                 </div>
             </div>

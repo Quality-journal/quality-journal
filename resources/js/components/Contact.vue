@@ -14,12 +14,12 @@
             Editor in chief:
           </p>
           <p class="mt-1">
-            Dr Nada Stanojević<br />
+            Miloš Vasić<br />
             E:
             <a
               class="text-blue-600 hover:text-blue-800"
-              :href="'mailto: nstanojevic@m-sci.rs'"
-              >nstanojevic@m-sci.rs</a
+              :href="'mailto: mvasic@q-sci.rs'"
+              >mvasic@q-sci.rs</a
             >
           </p>
           <p class="text-xl font-semibold leading-6 mt-4 text-blue-600">

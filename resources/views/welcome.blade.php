@@ -4,7 +4,11 @@
     <x-slot name="description">{{ $page->description }}</x-slot>
     <x-slot name="keywords">{{ $page->keywords }}</x-slot>
 
-    <slider-component></slider-component>
+    {{-- <slider-component></slider-component> --}}
+
+    <div class="">
+        <img class="object-cover w-full" src="{{ asset('images/system-engineering.jpg') }}" alt="system-engineering">
+    </div>
 
     <div class="mx-auto sm:px-6 lg:px-8 bg-white">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6">

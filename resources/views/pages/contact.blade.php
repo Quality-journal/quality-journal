@@ -106,7 +106,7 @@
                     <p class="mt-1">
                         Miloš Vasić<br />
                         E:
-                        <a class="text-blue-600 hover:text-blue-800" href="mailto:mvasic@q-sci.rs">mvasic@q-sci.rs</a>
+                        <a class="text-blue-600 hover:text-blue-800" href="mailto:office@q-sci.rs">office@q-sci.rs</a>
                     </p>
                     {{-- <p class="text-xl font-semibold leading-6 mt-4 text-gray-800">
                         Editorial office:

@@ -36,7 +36,7 @@
                 <div class="w-full sm:w-1/4 px-8">
                     <p class="font-bold">Contact</p>
                     <p class="mt-2">
-                        Editorial office<br />Kraljice Marije 16,<br />11000
+                        Editorial office<br />Takovska 5,<br />11000
                         Belgrade, Serbia<br /><a href="mailto:office@q-sci.rs"
                             >office@q-sci.rs</a
                         >

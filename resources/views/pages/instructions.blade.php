@@ -15,7 +15,7 @@
                 </div>
                 <div class="w-full md:w-1/4 flex flex-row md:flex-col md:space-y-5 justify-around sm:justify-start items-center">
                     <div class="w-20 md:w-24 h-20 md:h-24 inline-flex items-center justify-center rounded-full text-xs md:text-sm bg-gray-600 text-white cursor-pointer hover:bg-opacity-90 transition-all">
-                        <div class="font-bold text-center"><a href="{{ asset('/files/'.$documents[0]->path) }}" target="_blank"><i class="fas fa-download"></i><br>Authors guidlines</a></div>
+                        <div class="font-bold text-center"><a href="{{ asset('/files/'.$documents[0]->path) }}" target="_blank"><i class="fas fa-download"></i><br>Authors guidelines</a></div>
                     </div>
                     <div class="w-20 md:w-24 h-20 md:h-24 inline-flex items-center justify-center rounded-full text-xs md:text-sm bg-gray-600 text-white cursor-pointer hover:bg-opacity-90 transition-all">
                         <div class="font-bold text-center"><a href="{{ asset('/files/'.$documents[1]->path) }}" target="_blank"><i class="fas fa-download"></i><br>Article template</a></div>

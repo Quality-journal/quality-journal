@@ -12,7 +12,7 @@
                 @include('components.browse-issues-side-menu')
 
                 <div class="w-full sm:w-3/4 px-8">
-                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-gray-800">{{ $currentSelection->title }}</h1>
+                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-newyellow">{{ $currentSelection->title }}</h1>
                     <hr>
 
                     <div class="flex flex-wrap -m-4 mt-2">

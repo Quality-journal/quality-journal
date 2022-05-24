@@ -22,6 +22,18 @@
                 <span class="close-message cursor-pointer pt-1"><i class="fas fa-times"></i></span>
             </div>
         </div>
+        @elseif(Session::has('error'))
+        <div class="message flex justify-center items-center my-4 font-medium py-3 px-2 bg-white rounded-md text-red-700 border border-red-300 ">
+            <div class="ml-2">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="font-normal max-w-full flex-initial pl-2">
+                {{ session('error') }}
+            </div>
+            <div class="flex flex-auto flex-row-reverse mr-4">
+                <span class="close-message cursor-pointer pt-1"><i class="fas fa-times"></i></span>
+            </div>
+        </div>
         @endif
 
         <div class="w-full mt-">

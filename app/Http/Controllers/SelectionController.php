@@ -2,91 +2,63 @@
 
 namespace App\Http\Controllers;
 
+use Throwable;
 use App\Models\Selection;
-use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 
 class SelectionController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $selections = Selection::all();
         return view('admin-pages.selection.index', ['selections' => $selections]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('admin-pages.selection.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        $selection = Selection::create($request->all());
-        $selection->slug = Str::slug($selection->title);
-        $selection->save();
-        return redirect('/selections')->with(['message' => 'Selection created!']);
+        try {
+            $selection = Selection::create($request->all());
+            $selection->slug = Str::slug($selection->title);
+            $selection->save();
+            return redirect('/selections')->with(['message' => 'Selekcija izdanja kreirana.']);
+        } catch (Throwable $e) {
+            return redirect('/selections')->with(['error' => 'Greška prilikom kreiranja selekcije izdanja.']);
+        }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Selection  $selection
-     * @return \Illuminate\Http\Response
-     */
     public function show(Selection $selection)
     {
-        //
+        abort(404);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Selection  $selection
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Selection $selection)
     {
         return view('admin-pages.selection.edit', ['selection' => $selection]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Selection  $selection
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Selection $selection)
     {
-        $selection->update($request->all());
-        return redirect('/selections')->with(['message' => 'Selection edited!']);
+        try {
+            $selection->update($request->all());
+            return redirect('/selections')->with(['message' => 'Selekcija izdanja izmenjena.']);
+        } catch (Throwable $e) {
+            return redirect('/selections')->with(['error' => 'Greška prilikom izmene selekcije izdanja.']);
+        }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Selection  $selection
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Selection $selection)
     {
-        $selection->delete();
-        return redirect('/selections')->with(['message' => 'Selection deleted!']);
+        try {
+            $selection->delete();
+            return redirect('/selections')->with(['message' => 'Selekcija izdanja uklonjena.']);
+        } catch (Throwable $e) {
+            return back()->with(['error' => 'Nije moguće brisanje selekcije izdanja koja ima pripadajuća izdanja. Ako želite da obrišete selekciju prvo uklonite sva njena izdanja.']);
+        }
     }
 }

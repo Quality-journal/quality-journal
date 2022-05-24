@@ -40,7 +40,7 @@ class ImagesController extends Controller
         $path = Storage::disk('pub')->put('/images', $request->image);
         Image::create($request->except('image') + ['path' => $path]);
 
-        return redirect('/photos')->with(['message' => 'Photo created!']);
+        return redirect('/photos')->with(['message' => 'Slika sačuvana.']);
     }
 
     /**
@@ -51,7 +51,7 @@ class ImagesController extends Controller
      */
     public function show($id)
     {
-        //
+        abort(404);
     }
 
     /**
@@ -87,7 +87,7 @@ class ImagesController extends Controller
             'path' => $path
         ]);
 
-        return redirect('/photos')->with(['message' => 'Photo updated!']);
+        return redirect('/photos')->with(['message' => 'Slika izmenjena.']);
     }
 
     /**
@@ -100,6 +100,6 @@ class ImagesController extends Controller
     {
         Storage::disk('pub')->delete($photo->path);
         $photo->delete();
-        return redirect('/photos')->with(['message' => 'Photo deleted!']);
+        return redirect('/photos')->with(['message' => 'Slika uklonjena.']);
     }
 }

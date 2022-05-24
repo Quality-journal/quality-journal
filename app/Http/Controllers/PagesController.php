@@ -48,7 +48,7 @@ class PagesController extends Controller
      */
     public function show($id)
     {
-        //
+        abort(404);
     }
 
     /**
@@ -78,7 +78,7 @@ class PagesController extends Controller
             $page->update($request->all());
             $request->session()->flash('message', 'Stranica uspešno izmenjena');
         } catch (\Exception $e) {
-            $request->session()->flash('message', 'Došlo je do greške. Pokušajte ponovo.');
+            $request->session()->flash('error', 'Došlo je do greške. Pokušajte ponovo.');
         }
         return redirect('/pages');
     }

@@ -13,7 +13,7 @@
 
                 <div class="w-full sm:w-3/4 px-8">
                     @if($issue)
-                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-gray-800">{{ $issue->title }}</h1>
+                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-newyellow">{{ $issue->title }}</h1>
                     <hr>
 
                     <div class="flex py-4 flex-col sm:flex-row">
@@ -28,7 +28,7 @@
                         <div class="px-4 w-full">
                             <div class="flex flex-wrap text-left border-b py-4">
                                 <h3 class="w-full title-font font-medium text-xl">
-                                    <a class="text-center text-gray-800 hover:text-gray-600 transition-all" href="/article/{{ $article->slug }}"> {{
+                                    <a class="text-center text-newyellow hover:text-gray-600 transition-all" href="/article/{{ $article->slug }}"> {{
                                         $article->title }} </a>
                                 </h3>
                                 <p class="w-full text-lg mt-3">{{ $article->authors_names }} - {{ $article->doi }}</p>

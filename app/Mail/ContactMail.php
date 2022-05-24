@@ -33,6 +33,6 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->from($this->email)->subject('Poruka sa sajta q-sci.rs')->markdown('emails.message');
+        return $this->subject('Poruka sa sajta q-sci.rs')->markdown('emails.message');
     }
 }

@@ -74,7 +74,7 @@ class FrontController extends Controller
         Validator::make($request->all(), [
             'g-recaptcha-response' => 'required|recaptchav3:contactme,0.5'
         ]);
-        Mail::to('')->send(new ContactMail($request->name, $request->email, $request->message));
+        Mail::to('office@q-sci.rs')->send(new ContactMail($request->name, $request->email, $request->message));
         return back()->with(['message' => 'Message sent!']);
     }
 }
